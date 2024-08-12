@@ -3,7 +3,7 @@
 | Valor | Descripción                                      |
 | ----- | ------------------------------------------------ |
 | 0     | Documento tributario no domiciliado sin RUC      |
-| 1     | Documento Nacial de Identidad - **DNI**          |
+| 1     | Documento Nacional de Identidad - **DNI**        |
 | 2     | Carnet de extranjería                            |
 | 3     | Registro único de contribuyente - **RUC**        |
 | 4     | Pasaporte                                        |
