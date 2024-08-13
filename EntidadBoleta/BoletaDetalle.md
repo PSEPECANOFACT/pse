@@ -1,4 +1,4 @@
-### FacturaDetalle
+### BoletaDetalle
 
 | Propiedad | Descripción | **Condición** |
 | --- | --- | --- |
