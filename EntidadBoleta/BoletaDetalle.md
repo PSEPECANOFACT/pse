@@ -8,7 +8,7 @@
 | **UnidadMedida**  <br>`obligatorio`  <br>`string` | Unidad de medida del producto/servicio. | Entre 2 y 3 caracteres. |
 | **Cantidad**  <br>`obligatorio`  <br>`number` | Cantidad del producto/servicio. | decimal(20,10) |
 | **ValorUnitario**  <br>`obligatorio`  <br>`number` | 'Valor unitario' del producto por ítem (para operaciones onerosas), o 'Valor referencial unitario' del producto por ítem (para operaciones gratuitas). En ambos casos, el precio es sin IGV.  <br>Es preferible enviar la mayor cantidad de decimales para hacer más preciso la validación de cálculos. | decimal(20,10) |
-| **PrecioUnitario**  <br>`obligatorio`  <br>`number` | Precio del producto/servicio incluido el IGV. Si el tipo de afectación es gratuito, consignar cero (0). | decimal(20,10) |
+| **PrecioUnitario**  <br>`obligatorio`  <br>`number` | Precio del producto/servicio incluido el IGV. Este precio incluye el descuento por ítem.  <br>Si el tipo de afectación es gratuito, consignar cero (0). | decimal(20,10) |
 | **TipoAfectacionIgv**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoAfectacionIgv.md) |  |
 | **PorcentajeDescuento**  <br>`opcional`  <br>`number` | Porcentaje de descuento del ítem, expresado en formato decimal (por ejemplo: 0.05). | decimal(8, 3) |
 | **ImporteDescuento**  <br>`opcional`  <br>`number` | Importe del descuento basado en el valor venta del item 'antes' de los impuestos. | decimal(14, 2) |
