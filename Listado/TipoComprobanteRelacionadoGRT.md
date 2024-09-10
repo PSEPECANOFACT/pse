@@ -1,4 +1,4 @@
-### TipoComprobanteRelacionadoGRR (GR Transportista)
+### TipoComprobanteRelacionadoGRT (GR Transportista)
 
 | **Valor** | **Descripción**    |
 | --------- | ------------------ |
