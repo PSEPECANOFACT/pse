@@ -2,17 +2,17 @@
 
 | Propiedad | Descripción | Condición |
 | --- | --- | --- |
-| **Emisor**  <br>`obligatorio`  <br>`object` | [[Ver objeto]](../Entidad/Emisor.md) |  |
-| **Cliente**  <br>`obligatorio`  <br>`object` | [[Ver objeto]](../Entidad/Cliente.md) |  |
-| **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo del comprobante  <br>**Ejemplo:  <br>**F001-00000001 | Máximo 13 caracteres. |
-| **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la emisión del comprobante.  <br>**Ejemplo:  <br>**yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
-| **FechaVencimiento**  <br>`obligatorio`  <br>`string` | Fecha y hora del vencimiento del comprobante.  <br>**Ejemplo:  <br>**yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
+| **Emisor**  <br>`obligatorio`  <br>`object` | Datos del emisor.  <br>[[Ver objeto]](../Entidad/Emisor.md) |  |
+| **Cliente**  <br>`obligatorio`  <br>`object` | Datos del adquiriente o usuario.  <br>[[Ver objeto]](../Entidad/Cliente.md) |  |
+| **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo del comprobante.  <br>**Ejemplo:**  <br>F001-00000001 | Máximo 13 caracteres. |
+| **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la emisión del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
+| **FechaVencimiento**  <br>`obligatorio`  <br>`string` | Fecha y hora del vencimiento del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
 | **TipoOperacion**  <br>`obligatorio`  <br>`string` | [[Ver listado]](../Listado/TipoOperacion.md) |  |
 | **TipoMoneda**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoMoneda.md) |  |
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoCondicionVenta.md) |  |
 | **SubCondicion**  <br>`opcional`  <br>`string` |  | Máximo hasta 50 caracteres. |
 | **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición | Máximo hasta 50 caracteres. |
-| **Correo**  <br>`opcional`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>[joaquin@pecano.pe;franciscoli@pecano.pe;oscar@pecano.pe](https://mailto:joaquin@pecano.pe) | Máximo hasta 5 correos. |
+| **Correo**  <br>`opcional`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
 | **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta. | Máximo hasta 100 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
 | **DetalleCredito**  <br>`opcional`  <br>`array` | [[Ver objeto]](../Entidad/Credito.md) | El arreglo puede contener solo 1 objeto. |
