@@ -2,8 +2,6 @@
 
 | **Propiedad** | **Descripción** | **Condición** |
 | --- | --- | --- |
-| **RucEmisor**  <br>`obligatorio`  <br>`string` | Número de RUC del emisor. | 11 caracteres. |
-| **TipoComprobante**  <br>`obligatorio`  <br>`number` | Identificador del tipo de comprobante de la nota de crédito.  <br>[[Ver listado]](../Listado/TipoComprobante.md) | Constante: 30. |
 | **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo de la nota de crédito. | Formato: \[Serie\]-\[Correlativo\]  <br>Serie: 4 caracteres.  <br>Correlativo: 8 caracteres.  <br>Máximo de caracteres: 13. |
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la transacción de la nota de crédito. | Formato: yyyy-MM-ddTHH:mm:ss |
 | **Correo**  <br>`obligatorio`  <br>`string` | Correo electrónico al cual le llegará el CDR del CPE. | Se puede enviar una lista de correos utilizando el separador punto y coma (;) |
