@@ -11,7 +11,7 @@
 | **NumeroComprobanteRelacionado**  <br>`condicional`  <br>`string` | Número de documento relacionado. | Validaciones de la GRR. |
 | **RucEmisorComprobanteRelacionado**  <br>`condicional`  <br>`string` | Número de RUC del emisor del documento relacionado. | Máximo 11 dígitos. |
 | **Destinatario**  <br>`obligatorio`  <br>`objeto` | Datos del destinatario.  <br>[[Ver entidad]](../Entidad/DestinatarioGRR.md) |  |
-| **Proveedor**  <br>`condicional`  <br>`objeto` | Datos del proveedor.  <br>[[Ver entidad]](../Entidad/ProveedorGRR.md) | Solo para motivo de traslado 'Compra'. |
+| **Proveedor**  <br>`condicional`  <br>`objeto` | Datos del proveedor.  <br>[[Ver entidad]](../Entidad/ProveedorGRR.md) | Solo para los motivos de traslado 'Compra' y 'Recojo de bienes transformados'. |
 | **MotivoTraslado**  <br>`obligatorio`  <br>`number` | Motivo del traslado.  <br>[[Ver listado]](../Listado/MotivoTraslado.md) | Catálogo 20. |
 | **PesoBrutoTotalCarga**  <br>`obligatorio`  <br>`number` | Peso bruto total de la carga. | decimal(15,3) |
 | **NumeroBultos**  <br>`condicional`  <br>`number` | Número de bultos o pallets. | Numérico hasta 6 dígitos.  <br>Solo para motivo de traslado 'Exportación'. |
@@ -21,11 +21,11 @@
 | **NumeroRegistroMtc**  <br>`condicional`  <br>`string` | Número de Registro MTC. | Alfanumérico hasta 20 caracteres.  <br>Solo letras mayúsculas y números.  <br>Solo para modalidad de traslado 'Transporte público'. |
 | **Vehiculos**  <br>`condicional`  <br>`array` | Vehículos principal y secundarios.  <br>[[Ver entidad]](../Entidad/Vehiculo.md) | Hasta un máximo de 2 vehículos.  <br>Solo modalidad de traslado 'Transporte privado'. |
 | **Conductores**  <br>`condicional`  <br>`array` | Conductores principal y secundarios.  <br>[[Ver entidad]](../Entidad/Conductor.md) | Hasta un máximo de 2 conductores.  <br>Solo modalidad de traslado 'Transporte privado'. |
-| **UbigeoPartida**  <br>`obligatorio`  <br>`string` | UBIGEO de partida. | Numérico de 6 dígitos.  <br>Catálogo 13.  <br>Solo motivo de traslado 'Compra'. |
-| **DireccionPartida**  <br>`obligatorio`  <br>`string` | Dirección completa y detallada de partida. | Alfanumérico de 3 a 100 caracteres.  <br>Solo motivo de traslado 'Compra'. |
-| **CodLocalSunatPuntoPartida**  <br>`condicional`  <br>`string` | Código de establecimiento de punto de partida. | Numérico de 4 dígitos.  <br>Por defecto = "0000".  <br>Solo motivo de traslado 'Compra'. |
+| **UbigeoPartida**  <br>`obligatorio`  <br>`string` | UBIGEO de partida. | Numérico de 6 dígitos.  <br>Catálogo 13. |
+| **DireccionPartida**  <br>`obligatorio`  <br>`string` | Dirección completa y detallada de partida. | Alfanumérico de 3 a 100 caracteres. |
+| **CodLocalSunatPuntoPartida**  <br>`condicional`  <br>`string` | Código de establecimiento de punto de partida. | Numérico de 4 dígitos.  <br>Por defecto = "0000".  <br>Obligatorio para motivos de traslado 'Traslado entre establecimientos de la misma empresa' e 'Importación'. |
 | **UbigeoLlegada**  <br>`condicional`  <br>`string` | UBIGEO de llegada. | Numérico de 6 dígitos.  <br>Catálogo 13.  <br>Solo para motivos de traslado diferente de 'Traslado emisor itinerante CP'. |
 | **DireccionLlegada**  <br>`condicional`  <br>`string` | Dirección completa y detallada de llegada. | Alfanumérico de 3 a 100 caracteres.  <br>Solo para motivos de traslado diferente de 'Traslado emisor itinerante CP'. |
-| **CodLocalSunatPuntoLlegada**  <br>`condicional`  <br>`string` | Código de establecimiento de punto de llegada. | Numérico de 4 dígitos.  <br>Solo para motivos de traslado diferente de 'Traslado emisor itinerante CP'. |
+| **CodLocalSunatPuntoLlegada**  <br>`condicional`  <br>`string` | Código de establecimiento de punto de llegada. | Numérico de 4 dígitos.  <br>Obligatorio si el motivo de traslado es 'Traslado entre establecimientos de la misma empresa'. |
 | **DetalleGuia**  <br>`obligatorio`  <br>`array` | Detalles del comprobante.  <br>[[Ver entidad]](../EntidadGuiaRemitente/GuiaRemitenteDetalle.md) |  |
 | **VentaGuia**  <br>`condicional`  <br>`array` | Relación de ventas asociadas a la Guía de Remisión.  <br>[[Ver entidad]](../EntidadGuiaRemitente/GuiaRemitenteVenta.md) |  |
