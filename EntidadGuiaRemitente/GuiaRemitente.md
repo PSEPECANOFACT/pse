@@ -14,6 +14,7 @@
 | **Proveedor**  <br>`condicional`  <br>`objeto` | Datos del proveedor.  <br>[[Ver entidad]](../Entidad/ProveedorGRR.md) | Solo para los motivos de traslado 'Compra' y 'Recojo de bienes transformados'. |
 | **MotivoTraslado**  <br>`obligatorio`  <br>`number` | Motivo del traslado.  <br>[[Ver listado]](../Listado/MotivoTraslado.md) | Catálogo 20. |
 | **PesoBrutoTotalCarga**  <br>`obligatorio`  <br>`number` | Peso bruto total de la carga. | decimal(15,3) |
+| **UnidadMedidaPesoBruto**  <br>`obligatorio`  <br>`string` | Unidad de medida del peso bruto. | Solo puede ser "KGM" (Kilogramos) o "TNE" (Toneladas). |
 | **NumeroBultos**  <br>`condicional`  <br>`number` | Número de bultos o pallets. | Numérico hasta 6 dígitos.  <br>Solo para motivo de traslado 'Exportación'. |
 | **ModalidadTransporte**  <br>`obligatorio`  <br>`number` | Modalidad de traslado o de transporte.  <br>[[Ver listado]](../Listado/ModalidadTransporte.md) | Catálogo 18. |
 | **FechaInicioTraslado**  <br>`obligatorio`  <br>`string` | Fecha de inicio de traslado.  <br>**Ejemplo:**  <br>yyyy-MM-dd. | Debe ser mayor o igual que la fecha de emisión. |
