@@ -4,7 +4,7 @@
 | --- | --- | --- |
 | **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo de la nota de crédito. | Formato: \[Serie\]-\[Correlativo\]  <br>Serie: 4 caracteres.  <br>Correlativo: 8 caracteres.  <br>Máximo de caracteres: 13. |
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la transacción de la nota de crédito. | Formato: yyyy-MM-ddTHH:mm:ss |
-| **Correo**  <br>`opcional`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
+| **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
 | **TipoMoneda**  <br>`obligatorio`  <br>`number` | Tipo de moneda.  <br>[[Ver listado]](../Listado/TipoMoneda.md) | Número entero. |
 | **TipoNotaCredito**  <br>`obligatorio`  <br>`number` | Código del tipo de nota de crédito.  <br>[[Ver listado]](../Listado/TipoNotaCredito.md) | Número entero. |
 | **MotivoNotaCredito**  <br>`obligatorio`  <br>`string` | Motivo que sustento la emisión de la nota de crédito. | De 1 a 250 caracteres. |

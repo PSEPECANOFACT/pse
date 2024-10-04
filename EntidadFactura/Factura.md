@@ -12,7 +12,7 @@
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoCondicionVenta.md) |  |
 | **SubCondicion**  <br>`opcional`  <br>`string` |  | Máximo hasta 50 caracteres. |
 | **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición | Máximo hasta 50 caracteres. |
-| **Correo**  <br>`opcional`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
+| **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
 | **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta. | Máximo hasta 100 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
 | **DetalleCredito**  <br>`opcional`  <br>`array` | [[Ver objeto]](../Entidad/Credito.md) | El arreglo puede contener solo 1 objeto. |

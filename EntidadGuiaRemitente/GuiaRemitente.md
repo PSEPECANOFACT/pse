@@ -4,7 +4,7 @@
 | --- | --- | --- |
 | **NumeroDocumento**  <br>`obligarorio`  <br>`string` | Serie y correlativo del comprobante.  <br>**Ejemplo:**  <br>T001-00000001 | Alfanumérico de 13 caracteres. |
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de emisión del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
-| **Correo**  <br>`opcional`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
+| **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
 | **Observacion**  <br>`opcional`  <br>`string` | Observaciones. | Alfanumérico de hasta 250 caracteres. |
 | **Remitente**  <br>`obligatorio`  <br>`objeto` | Datos del remitente.  <br>[[Ver entidad]](../Entidad/RemitenteGRR.md) |  |
 | **TipoComprobanteRelacionado**  <br>`condicional`  <br>`number` | Identificador del tipo de documento relacionado.  <br>[[Ver listado]](../Listado/TipoComprobanteRelacionadoGRR.md) | Catálogo 61. |
