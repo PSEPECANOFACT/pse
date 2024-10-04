@@ -4,7 +4,7 @@
 | --- | --- | --- |
 | **NumeroDocumento**  <br>`obligarorio`  <br>`string` | Serie y correlativo del comprobante.  <br>**Ejemplo:**  <br>V001-00000001 | Alfanumérico de 13 caracteres. |
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de emisión del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
-| **Correo**  <br>`opcional`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
+| **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
 | **Observacion**  <br>`opcional`  <br>`string` | Observaciones. | Alfanumérico de hasta 250 caracteres. |
 | **Transportista**  <br>`obligatorio`  <br>`objeto` | Datos del transportista.  <br>[[Ver entidad]](../Entidad/TransportistaGRT.md) |  |
 | **NumeroRegistroMtc**  <br>`obligatorio`  <br>`string` | Número de Registro MTC. | Alfanumérico hasta 20 caracteres.  <br>Solo letras mayúsculas y números. |
@@ -27,3 +27,4 @@
 | **FechaInicioTraslado**  <br>`obligatorio`  <br>`string` | Fecha de inicio de traslado.  <br>**Ejemplo:**  <br>yyyy-MM-dd. | Debe ser mayor o igual que la fecha de emisión. |
 | **PesoBrutoTotalCarga**  <br>`obligatorio`  <br>`number` | Peso bruto total de la carga. | decimal(15,3) |
 | **UnidadMedidaPesoBruto**  <br>`obligatorio`  <br>`string` | Unidad de medida del peso bruto. | Solo puede ser "KGM" (Kilogramos) o "TNE" (Toneladas). |
+| **InformacionAdicional**  <br>`opcional`  <br>`array` |  Información adicional del comprobante.  <br>[[Ver entidad]](../Entidad/InformacionAdicional.md) |  |
