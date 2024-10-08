@@ -12,6 +12,7 @@
 | **RucEmisorComprobanteRelacionado**  <br>`condicional`  <br>`string` | Número de RUC del emisor del documento relacionado. | Máximo 11 dígitos. |
 | **Destinatario**  <br>`obligatorio`  <br>`objeto` | Datos del destinatario.  <br>[[Ver entidad]](../Entidad/DestinatarioGRR.md) |  |
 | **Proveedor**  <br>`condicional`  <br>`objeto` | Datos del proveedor.  <br>[[Ver entidad]](../Entidad/ProveedorGRR.md) | Solo para los motivos de traslado 'Compra' y 'Recojo de bienes transformados'. |
+| **Comprador**  <br>`condicional`  <br>`objeto` | Datos del comprador.  <br>[[Ver entidad]](../Entidad/CompradorGRR.md) | Solo para los motivos de traslado 'Venta con entrega a terceros' y 'Otros'. |
 | **MotivoTraslado**  <br>`obligatorio`  <br>`number` | Motivo del traslado.  <br>[[Ver listado]](../Listado/MotivoTraslado.md) | Catálogo 20. |
 | **PesoBrutoTotalCarga**  <br>`obligatorio`  <br>`number` | Peso bruto total de la carga. | decimal(15,3) |
 | **UnidadMedidaPesoBruto**  <br>`obligatorio`  <br>`string` | Unidad de medida del peso bruto. | Solo puede ser "KGM" (Kilogramos) o "TNE" (Toneladas). |
