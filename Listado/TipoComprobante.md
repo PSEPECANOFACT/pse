@@ -9,3 +9,4 @@
 | 40        | Nota de Débito                 |
 | 70        | Guía de Remisión Remitente     |
 | 80        | Guía de Remisión Transportista |
+| 90        | Comprobante de Retención       |
