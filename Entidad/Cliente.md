@@ -1,8 +1,11 @@
 ### Cliente
 
-| Propiedad                                                    | Descripción                                                                 | **Condición**                 |
-| ------------------------------------------------------------ | --------------------------------------------------------------------------- | ----------------------------- |
-| **TipoDocumentoIdentidad**  <br>`obligatorio`  <br>`number`  | Tipo de documento de identidad del adquiriente o usuario.  <br>[[Ver listado]](../Listado/TipoDocumentoIdentidad.md) | Usar los valores del listado. |
-| **ValorDocumentoIdentidad**  <br>`obligatorio`  <br>`string` | Número de documento de identidad del adquiriente o usuario.                 |                               |
-| **RazonSocial**  <br>`obligatorio`  <br>`string`             | Apellidos y nombres, denominación o razón social del adquiriente o usuario. | Máximo 100 caracteres.        |
-| **Direccion**  <br>`obligatorio`  <br>`string`               | Dirección del adquiriente o usuario (Dirección completa y detallada).       | Máximo 100 caracteres.        |
+| Propiedad                                                     | Descripción                                                   | **Condición**               |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------- |
+| **TipoDocumentoIdentidad**  <br>`obligatorio`  <br>`number`   | Tipo de documento de identidad del cliente.  <br>[[Ver listado]](../Listado/TipoDocumentoIdentidad.md) | Usar los valores del listado. |
+| **NumeroDocumentoIdentidad**  <br>`obligatorio`  <br>`string` | Número de documento de identidad cliente.                     |                             |
+| **RazonSocial**  <br>`obligatorio`  <br>`string`              | Apellidos y nombres, denominación o razón social del cliente. | Máximo 1500 caracteres.     |
+| **NombreComercial**  <br>`opcional`  <br>`string`             | Nombre comercial del cliente.                                 | Máximo 1500 caracteres.     |
+| **DireccionCompleta**  <br>`opcional`  <br>`string`           | Dirección completa y detallada del cliente.                   | Máximo 100 caracteres.      |
+| **Urbanizacion**  <br>`opcional`  <br>`string`                | Urbanización del cliente.                                     | Máximo 30 caracteres.       |
+| **Ubigeo**  <br>`opcional`  <br>`string`                      | Ubigeo del cliente.                                           | Debe contener 6 caracteres. |
