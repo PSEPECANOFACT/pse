@@ -3,7 +3,7 @@
 | Propiedad | Descripción | Condición |
 | --- | --- | --- |
 | **Emisor**  <br>`obligatorio`  <br>`object` | Datos del emisor.  <br>[[Ver objeto]](../Entidad/Emisor.md) |  |
-| **Cliente**  <br>`obligatorio`  <br>`object` | Datos del adquiriente o usuario.  <br>[[Ver objeto]](../Entidad/Cliente.md) |  |
+| **Cliente**  <br>`obligatorio`  <br>`object` | Datos del adquiriente o usuario.  <br>[[Ver objeto]](../Entidad/Adquiriente.md) |  |
 | **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo del comprobante.  <br>**Ejemplo:**  <br>F001-00000001 | Máximo 13 caracteres. |
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la emisión del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
 | **FechaVencimiento**  <br>`obligatorio`  <br>`string` | Fecha y hora del vencimiento del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
