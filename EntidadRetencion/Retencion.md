@@ -6,7 +6,7 @@
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la transacción del Comprobante de Retención. | Formato: yyyy-MM-ddTHHmmss. |
 | **Correo**  <br>`opcional`  <br>`string` | Correo electrónico al cual le llegará el CDR del CPE. | Se puede enviar una lista de correos utilizando el separador punto y coma (\;) |
 | **Emisor**  <br>`obligatorio`  <br>`object` | Datos del Emisor.  <br>[[Ver entidad]](../Entidad/Emisor.md) |  |
-| **Proveedor**  <br>`obligatorio`  <br>`object` | Datos del Proveedor.  <br>[[Ver entidad]](../Entidad/Emisor.md) |  |
+| **Proveedor**  <br>`obligatorio`  <br>`object` | Datos del Proveedor.  <br>[[Ver entidad]](../Entidad/Proveedor.md) |  |
 | **RegimenRetencion**  <br>`obligatorio`  <br>`number` | Identificador del régimen de retención, del cual se obtiene la tasa de retención.  <br>[[Ver listado]](../Listado/RegimenRetencion.md) | Número entero. |
 | **Observaciones**  <br>`opcional`  <br>`string` | Observaciones. | Máximo:  |
 | **DetalleRetencion**  <br>`obligatorio`  <br>`array` | Datos de los detalles o ítems del Comprobante de Retención.  <br>[[Ver entidad]](../EntidadRetencion/RetencionDetalle.md) | Mínimo de ítems: 1.  <br>Máximo de ítems: 100. |
