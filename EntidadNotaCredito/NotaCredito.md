@@ -9,7 +9,7 @@
 | **TipoNotaCredito**  <br>`obligatorio`  <br>`number` | Código del tipo de nota de crédito.  <br>[[Ver listado]](../Listado/TipoNotaCredito.md) | Número entero. |
 | **MotivoNotaCredito**  <br>`obligatorio`  <br>`string` | Motivo que sustento la emisión de la nota de crédito. | De 1 a 250 caracteres. |
 | **Emisor**  <br>`obligatorio`  <br>`objeto` | Datos del emisor.  <br>[[Ver entidad]](../Entidad/Emisor.md) |  |
-| **Cliente**  <br>`obligatorio`  <br>`objeto` | Datos del adquiriente o usuario.  <br>[[Ver entidad]](../Entidad/Cliente.md) |  |
+| **Cliente**  <br>`obligatorio`  <br>`objeto` | Datos del adquiriente o usuario.  <br>[[Ver entidad]](../Entidad/Adquiriente.md) |  |
 | **NumeroDocumentoReferencia**  <br>`obligatorio`  <br>`string` | Serie y correlativo del documento que modifica relacionado a la nota de crédito. | Formato: \[Serie\]-\[Correlativo\]  <br>Serie: 4 caracteres.  <br>Correlativo: 8 caracteres.  <br>Máximo de caracteres: 13. |
 | **TipoComprobanteReferencia**  <br>`obligatorio`  <br>`number` | Identificador del tipo de comprobante del documento que modifica relacionado a la nota de crédito.  <br>[[Ver listado]](../Listado/TipoComprobante.md) | Número entero. |
 | **DetalleNotaCredito**  <br>`obligatorio`  <br>`objeto` | Datos del detalle o ítem de la nota de crédito.  <br>[[Ver entidad]](../EntidadNotaCredito/NotaCreditoDetalle.md) |  |
