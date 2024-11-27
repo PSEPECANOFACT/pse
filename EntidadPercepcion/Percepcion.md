@@ -6,7 +6,7 @@
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la transacción del Comprobante de Percepción. | Formato: yyyy-MM-ddTHHmmss. |
 | **Correo**  <br>`opcional`  <br>`string` | Correo electrónico al cual le llegará el CDR del CPE. | Se puede enviar una lista de correos utilizando el separador punto y coma (\;) |
 | **IndicadorEmisionExcepcional**  <br>`opcional`  <br>`number` | Indicador de emisión excepcional.  <br>Si se activa, el Comprobante de Percepción solo puede relacionar al tipo de documento 'Factura', y solo uno. | Si se consigna un valor, este debe ser 1; de lo contrario, puede ser 0, null o no consignar ninguna línea (propiedad). |
-| **Emisor**  <br>`obligatorio`  <br>`object` | Datos del Emisor.  <br>[[Ver entidad]](../Entidad/Emisor.md) |  |
+| **Emisor**  <br>`obligatorio`  <br>`object` | Datos del Emisor.  <br>[[Ver entidad]](../Entidad/Emisor2.md) |  |
 | **Cliente**  <br>`obligatorio`  <br>`object` | Datos del Cliente.  <br>[[Ver entidad]](../Entidad/Cliente.md) |  |
 | **RegimenPercepcion**  <br>`obligatorio`  <br>`number` | Identificador del régimen de percepción, del cual se obtiene el porcentaje de percepción.  <br>[[Ver listado]](../Listado/RegimenPercepcion.md) | Número entero. |
 | **Observaciones**  <br>`opcional`  <br>`string` | Observaciones. | Máximo:  |

@@ -5,7 +5,7 @@
 | **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo del Comprobante de Retención. | \<Serie>-\<Correlativo>.  <br>Serie: 4 caracteres.  <br>Correlativo: 8 dígitos.  <br> |
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la transacción del Comprobante de Retención. | Formato: yyyy-MM-ddTHHmmss. |
 | **Correo**  <br>`opcional`  <br>`string` | Correo electrónico al cual le llegará el CDR del CPE. | Se puede enviar una lista de correos utilizando el separador punto y coma (\;) |
-| **Emisor**  <br>`obligatorio`  <br>`object` | Datos del Emisor.  <br>[[Ver entidad]](../Entidad/Emisor.md) |  |
+| **Emisor**  <br>`obligatorio`  <br>`object` | Datos del Emisor.  <br>[[Ver entidad]](../Entidad/Emisor2.md) |  |
 | **Proveedor**  <br>`obligatorio`  <br>`object` | Datos del Proveedor.  <br>[[Ver entidad]](../Entidad/Proveedor.md) |  |
 | **RegimenRetencion**  <br>`obligatorio`  <br>`number` | Identificador del régimen de retención, del cual se obtiene la tasa de retención.  <br>[[Ver listado]](../Listado/RegimenRetencion.md) | Número entero. |
 | **Observaciones**  <br>`opcional`  <br>`string` | Observaciones. | Máximo:  |
