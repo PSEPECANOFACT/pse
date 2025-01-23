@@ -3,7 +3,8 @@
 | **Propiedad** | **Descripción** | **Condición** |
 | --- | --- | --- |
 | **IdItem**  <br>`obligatorio`  <br>`number` | Número secuencial del ítem dentro del detalle de la nota de crédito. | Valor mínimo 1.  <br>Valor máximo 99. |
-| **UnidadMedida**  <br>`obligatorio`  <br>`string` | Unidad de medida del producto/servicio. | Máximo 4 caracteres. |
+| **UnidadMedida**  <br>`obligatorio`  <br>`string` | Unidad de medida del producto/servicio. | Entre 1 y 3 caracteres. |
+| **UnidadMedidaAlias**  <br>`opcional`  <br>`string` | Unidad de medida alternativa del producto/servicio. Si el usuario lo deja en blanco, obtiene el código de la unidad de medida establecida por la SUNAT. | Máximo 35 caracteres. |
 | **Cantidad**  <br>`obligatorio`  <br>`number` | Cantidad del producto/servicio. | decimal(20,10). |
 | **CodigoProducto**  <br>`obligatorio`  <br>`string` | Código del producto/servicio. | Máximo 30 caracteres. |
 | **DescripcionProducto**  <br>`obligatorio`  <br>`string` | Descripción del producto/servicio. | Máximo 250 caracteres. |
