@@ -7,7 +7,7 @@
 | **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
 | **TipoMoneda**  <br>`obligatorio`  <br>`number` | Tipo de moneda.  <br>[[Ver listado]](../Listado/TipoMoneda.md) | Número entero. |
 | **TipoNotaCredito**  <br>`obligatorio`  <br>`number` | Código del tipo de nota de crédito.  <br>[[Ver listado]](../Listado/TipoNotaCredito.md) | Número entero. |
-| **MotivoNotaCredito**  <br>`obligatorio`  <br>`string` | Motivo que sustento la emisión de la nota de crédito. | De 1 a 250 caracteres. |
+| **MotivoNotaCredito**  <br>`obligatorio`  <br>`string` | Motivo que sustento la emisión de la nota de crédito.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | De 1 a 250 caracteres. |
 | **Emisor**  <br>`obligatorio`  <br>`objeto` | Datos del emisor.  <br>[[Ver entidad]](../Entidad/Emisor.md) |  |
 | **Cliente**  <br>`obligatorio`  <br>`objeto` | Datos del adquiriente o usuario.  <br>[[Ver entidad]](../Entidad/Adquiriente.md) |  |
 | **NumeroDocumentoReferencia**  <br>`obligatorio`  <br>`string` | Serie y correlativo del documento que modifica relacionado a la nota de crédito. | Formato: \[Serie\]-\[Correlativo\]  <br>Serie: 4 caracteres.  <br>Correlativo: 8 caracteres.  <br>Máximo de caracteres: 13. |
@@ -23,4 +23,4 @@
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | Identificador del tipo de condición de venta de la nota de crédito o del documento relacionado.  <br>[[Ver listado]](../Listado/TipoCondicionVenta.md) | Número entero. |
 | **FechaEmisionDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de la transacción del documento relacionado a la nota de crédito. | Formato: yyyy-MM-dd. |
 | **FechaVencimientoDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de vencimiento del documento relacionado a la nota de crédito.  <br>Si la condición de venta es "Crédito", la fecha de vencimiento es el mismo que la fecha de emisión. | Formato: yyyy-MM-dd. |
-| **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de llegada relacionado al comprobante de la venta. | Máximo 100 caracteres. |
+| **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de llegada relacionado al comprobante de la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 100 caracteres. |
