@@ -17,10 +17,10 @@
 | **Destinatario**  <br>`obligatorio`  <br>`objeto` | Datos del destinatario.  <br>[[Ver entidad]](../Entidad/DestinatarioGRT.md) |  |
 | **DetalleGuia**  <br>`obligatorio`  <br>`array` | Detalles del comprobante.  <br>[[Ver entidad]](../EntidadGuiaTransportista/GuiaTransportistaDetalle.md) |  |
 | **UbigeoPartida**  <br>`obligatorio`  <br>`string` | UBIGEO de partida. | Numérico de 6 dígitos.  <br>Catálogo 13. |
-| **DireccionPartida**  <br>`obligatorio`  <br>`string` | Dirección completa y detallada de partida.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Alfanumérico de 3 a 100 caracteres. |
+| **DireccionPartida**  <br>`obligatorio`  <br>`string` | Dirección completa y detallada de partida.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Alfanumérico de 3 a 500 caracteres. |
 | **CodLocalSunatPuntoPartida**  <br>`condicional`  <br>`string` | Código de establecimiento de punto de partida. | Numérico de 4 dígitos.  <br>Por defecto = "0000". |
 | **UbigeoLlegada**  <br>`obligatorio`  <br>`string` | UBIGEO de llegada. | Numérico de 6 dígitos.  <br>Catálogo 13. |
-| **DireccionLlegada**  <br>`obligatorio`  <br>`string` | Dirección completa y detallada de llegada.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Alfanumérico de 3 a 100 caracteres. |
+| **DireccionLlegada**  <br>`obligatorio`  <br>`string` | Dirección completa y detallada de llegada.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Alfanumérico de 3 a 500 caracteres. |
 | **CodLocalSunatPuntoLlegada**  <br>`obligatorio`  <br>`string` | Código de establecimiento de punto de llegada. | Numérico de 4 dígitos.  <br>Por defecto = "0000". |
 | **Vehiculos**  <br>`obligatorio`  <br>`array` | Vehículos principal y secundarios.  <br>[[Ver entidad]](../Entidad/Vehiculo.md) | Hasta un máximo de 2 vehículos. |
 | **Conductores**  <br>`obligatorio`  <br>`array` | Conductores principal y secundarios.  <br>[[Ver entidad]](../Entidad/Conductor.md) | Hasta un máximo de 2 conductores. |
