@@ -35,3 +35,4 @@ Todos los cambios notables de este proyecto se documentarán en este archivo.
 
 ### Modified
 - Anular documentos electrónicos de comprobantes para incluir los comprobantes de retenciones y de percepciones.
+- Cambio en las longitudes de los campos de tipo 'cadena' para que sus valores sean iguales a los establecidos por la SUNAT.
