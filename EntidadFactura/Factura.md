@@ -10,14 +10,14 @@
 | **TipoOperacion**  <br>`obligatorio`  <br>`string` | [[Ver listado]](../Listado/TipoOperacion.md) |  |
 | **TipoMoneda**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoMoneda.md) |  |
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoCondicionVenta.md) |  |
-| **SubCondicion**  <br>`opcional`  <br>`string` |  | Máximo hasta 50 caracteres. |
-| **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición | Máximo hasta 50 caracteres. |
+| **SubCondicion**  <br>`opcional`  <br>`string` |   <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
+| **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
 | **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
-| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta. | Máximo hasta 100 caracteres. |
+| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 100 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
 | **DetalleCredito**  <br>`opcional`  <br>`array` | [[Ver objeto]](../Entidad/Credito.md) | El arreglo puede contener solo 1 objeto. |
 | **PlacaVehiculo**  <br>`opcional`  <br>`string` | Número de placa del vehículo automotor. | Máximo 8 caracteres. |
-| **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta. | Máximo: 200 caracteres. |
+| **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo: 200 caracteres. |
 | **DetalleFactura**  <br>`obligatorio`  <br>`array` | [[Ver entidad]](../EntidadFactura/FacturaDetalle.md) | El arreglo puede contener hasta 99 objetos. |
 | **TotalValorVentaOpeGravada**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Gravado, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
 | **TotalValorVentaOpeInafecta**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Inafecto, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
@@ -33,7 +33,7 @@
 | **TotalAnticipos**  <br>`opcional`  <br>`number` | Sumatoria de los importes totales de anticipos (incluye los impuestos). | decimal(14, 2) |
 | **SubtotalAnticipos**  <br>`opcional`  <br>`number` | Sumatoria de los valores de venta de anticipos (no incluye los impuestos). | decimal(14, 2) |
 | **BienServicioDetraccion**  <br>`opcional`  <br>`number` | [[Ver listado]](../Listado/BienesYServiciosDetracciones.md) | Listado de bienes y servicios sujetos a detracciones. |
-| **NumeroCuentaBNDetraccion**  <br>`opcional`  <br>`string` | Numero de cuenta en el Banco de la Nación para la detraccion. Puede incluir números, guiones y espacios en blanco. | Máximo: 30 caracteres. |
+| **NumeroCuentaBNDetraccion**  <br>`opcional`  <br>`string` | Numero de cuenta en el Banco de la Nación para la detraccion. Puede incluir números, guiones y espacios en blanco. | Máximo: 100 caracteres. |
 | **ImporteDetraccion**  <br>`opcional`  <br>`number` | Monto total de la detracción en la moneda de la transacción (venta). | decimal(14, 2) |
 | **ImporteDetraccionEnMN**  <br>`opcional`  <br>`number` | Monto total de la detracción en moneda nacional (PEN). | decimal(14, 2) |
 | **PorcentajeDetraccion**  <br>`opcional`  <br>`number` | Porcentaje de la detracción expresado en formato decimal (por ejemplo: 0.10). | decimal(8, 3) |

@@ -5,7 +5,7 @@ Para conocer los detalles de los campos del JSON, descripción y condiciones de 
 | Tipo de Comprobante | Enlace |
 | --- | --- |
 | Factura (01) | [EntidadFactura/Factura.md](../main/EntidadFactura/Factura.md) |
-| Boleta (03) | [EntidadBoleta/Boleta.md](../main/EntidadBoleta/Boleta.md) |
+| Boleta de Venta (03) | [EntidadBoleta/Boleta.md](../main/EntidadBoleta/Boleta.md) |
 | Nota de Crédito (07) | [EntidadNotaCredito/NotaCredito.md](../main/EntidadNotaCredito/NotaCredito.md) |
 | Nota de Débito (08) | [EntidadNotaDebito/NotaDebito.md](../main/EntidadNotaDebito/NotaDebito.md) |
 | Comprobante de Retención (20) | [EntidadRetencion/Retencion.md](../main/EntidadRetencion/Retencion.md) |

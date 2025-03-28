@@ -10,12 +10,12 @@
 | **TipoOperacion**  <br>`obligatorio`  <br>`string` | [[Ver listado]](../Listado/TipoOperacion.md) |  |
 | **TipoMoneda**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoMoneda.md) |  |
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoCondicionVenta.md) |  |
-| **SubCondicion**  <br>`opcional`  <br>`string` |  | Máximo hasta 50 caracteres. |
-| **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición | Máximo hasta 50 caracteres. |
+| **SubCondicion**  <br>`opcional`  <br>`string` |   <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
+| **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
 | **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
-| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta. | Máximo hasta 100 caracteres. |
+| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 100 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
-| **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta. | Máximo: 200 caracteres. |
+| **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo: 200 caracteres. |
 | **DetalleBoleta**  <br>`obligatorio`  <br>`array` | [[Ver entidad]](../EntidadBoleta/BoletaDetalle.md) | El arreglo puede contener hasta 99 objetos. |
 | **TotalValorVentaOpeGravada**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Gravado, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
 | **TotalValorVentaOpeInafecta**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Inafecto, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
@@ -23,8 +23,9 @@
 | **TotalValorVentaOpeGratuita**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Gratuito. | decimal(14,2) |
 | **PorcentajeDescuentoGlobal**  <br>`opcional`  <br>`number` | Porcentaje global de descuento de la venta, expresdo en formato decimal: 15 % equivale a _0.15_ | decimal(14,2) |
 | **ImporteDescuentoGlobal**  <br>`opcional`  <br>`number` | Importe del descuento global de la venta sin incluir el impuesto correspondiente. | decimal(14,2) |
-| **ImporteDescuentoGlobalConIgv**  <br>`opcional`  <br>`number` | Importe del descuento global de la venta incluyendo el impuesto correspondiente. |  |
-| **Igv**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta. Calculado en base a los "Totales de Valor Venta", con el "Descuento Global sin IGV" (si es que tiene). | decimal(14,2) |
+| **ImporteDescuentoGlobalConIgv**  <br>`opcional`  <br>`number` | Importe del descuento global de la venta incluyendo el impuesto correspondiente (el impuesto solo es de las operaciones gravadas). |  |
+| **Igv**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas onerosas, con el "Descuento Global sin IGV" (si es que tiene). | decimal(14,2) |
+| **IgvGratuito**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta de operaciones gratuitas. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas gratuitas. | decimal(14,2) |
 | **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la venta. Calculado en base a los "Totales de Valor Venta", menos el "Descuento Global" (si es que tiene), más el "IGV", menos el "Total de Anticipo" (si es que tiene) | decimal(14,2) |
 | **AnticipoBoleta**  <br>`opcional`  <br>`array` | [[Ver objeto]](../EntidadBoleta/BoletaAnticipo.md) |  |
 | **TotalAnticipos**  <br>opcional  <br>number | Sumatoria de los importes totales de anticipos (incluye los impuestos). | decimal(14, 2) |
