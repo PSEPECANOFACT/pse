@@ -12,6 +12,6 @@ Para conocer los detalles de los campos del JSON, descripción y condiciones de 
 | Comprobante de Percepción (40) | [EntidadPercepcion/Percepcion.md](../main/EntidadPercepcion/Percepcion.md) |
 | Guía de Remisión Remitente (09) | [EntidadGuiaRemitente/GuiaRemitente.md](../main/EntidadGuiaRemitente/GuiaRemitente.md) |
 | Guía de Remisión Transportista (31) | [EntidadGuiaTransportista/GuiaTransportista.md](../main/EntidadGuiaTransportista/GuiaTransportista.md) |
-| Resumen Diario (50) | [EntidadResumenDiario/ResumenDiario.md](../pse/EntidadResumenDiario/ResumenDiario.md) |
-| Comunicación de Baja (60) | [EntidadComunicacionBaja/ComunicacionBaja.md](../pse/EntidadComunicacionBaja/ComunicacionBaja.md) |
-| Resumen de Reversión (92) | [EntidadResumenReversion/ResumenReversion.md](../pse/EntidadResumenReversion/ResumenReversion.md) |
+| Resumen Diario (50) | [EntidadResumenDiario/ResumenDiario.md](../main/EntidadResumenDiario/ResumenDiario.md) |
+| Comunicación de Baja (60) | [EntidadComunicacionBaja/ComunicacionBaja.md](../main/EntidadComunicacionBaja/ComunicacionBaja.md) |
+| Resumen de Reversión (92) | [EntidadResumenReversion/ResumenReversion.md](../main/EntidadResumenReversion/ResumenReversion.md) |
