@@ -1,4 +1,4 @@
-### ResumenDiario `(uso interno de Pecano)`
+### ResumenDiario  `(uso interno de Pecano)`
 
 | **Propiedad** | **Descripción** | **Condición** |
 | --- | --- | --- |
