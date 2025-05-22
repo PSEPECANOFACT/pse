@@ -38,4 +38,6 @@
 | 39        | Minerales no metálicos                                                                     |
 | 40        | Bien inmueble gravado con IGV                                                              |
 | 41        | Plomo                                                                                      |
+| 44        | Servicio de beneficio de minerales metálicos gravado con el IGV                            |
+| 45        | Minerales de oro y sus concentrados gravados con el IGV                                    |
 | 99        | Ley 30737                                                                                  |
