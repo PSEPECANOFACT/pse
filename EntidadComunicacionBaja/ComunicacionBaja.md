@@ -1,4 +1,4 @@
-### ComunicacionBaja
+### ComunicacionBaja  `(uso interno de Pecano)`
 
 | **Propiedad** | **Descripción** | **Condición** |
 | --- | --- | --- |
