@@ -15,6 +15,7 @@
 | **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
 | **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 100 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
+| **MontoNetoPendientePago**  <br>`opcional`  <br>`number` | Monto neto pendiente de pago. Es la sumatoria de todos los montos de las cuotas.  <br>Si el campo se deja en NULL, entonces el valor para el cálculo de la percepción se obtiene de: 'ImporteTotal' - 'ImporteDetraccion' - 'ImporteRetencion'. | decimal(14, 2)  <br>Este monto debe ser menor o igual que: 'ImporteTotal' - 'ImporteDetraccion' - 'ImportePercepcion'. |
 | **DetalleCredito**  <br>`opcional`  <br>`array` | [[Ver objeto]](../Entidad/Credito.md) | El arreglo puede contener solo 1 objeto. |
 | **PlacaVehiculo**  <br>`opcional`  <br>`string` | Número de placa del vehículo automotor. | Máximo 8 caracteres. |
 | **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo: 200 caracteres. |
