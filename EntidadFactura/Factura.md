@@ -8,6 +8,8 @@
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la emisión del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
 | **FechaVencimiento**  <br>`obligatorio`  <br>`string` | Fecha y hora del vencimiento del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
 | **TipoOperacion**  <br>`obligatorio`  <br>`string` | [[Ver listado]](../Listado/TipoOperacion.md) |  |
+| **DireccionEntregaBien**  <br>`opcional`  <br>`object` | Dirección del lugar en el que se entrega el bien. Dato exclusivo para ventas itinerantes.  <br>[[Ver objeto]](../Entidad/DireccionEntregaBien.md) |  |
+| **CodigoPaisUsoServicio**  <br>`opcional`  <br>`string` | Código del pais del uso, explotación o aprovechamiento del servicio. | Debe contener 2 caracteres que representen al país.  <br>En caso el código del país sea consignado, si el tipo de operación es "0201" o "0208", el código no debe ser "PE"; de lo contrario, si el tipo de operación es diferente de "0201" y de "0208", el código del país solo debe ser "PE". |
 | **TipoMoneda**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoMoneda.md) |  |
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoCondicionVenta.md) |  |
 | **SubCondicion**  <br>`opcional`  <br>`string` |   <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
