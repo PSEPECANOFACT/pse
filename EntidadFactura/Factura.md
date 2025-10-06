@@ -15,8 +15,7 @@
 | **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
 | **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 100 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
-| **MontoNetoPendientePago**  <br>`opcional`  <br>`number` | Monto neto pendiente de pago. Es la sumatoria de todos los montos de las cuotas.  <br>Si el campo se deja en NULL, entonces el valor para el cálculo de la percepción se obtiene de: 'ImporteTotal' - 'ImporteDetraccion' - 'ImporteRetencion'. | decimal(14, 2)  <br>Este monto debe ser menor o igual que: 'ImporteTotal' - 'ImporteDetraccion' - 'ImportePercepcion'. |
-| **DetalleCredito**  <br>`opcional`  <br>`array` | [[Ver objeto]](../Entidad/Credito.md) | Si la condición es al 'Contado', este campo debe ser null. |
+| **DetalleCredito**  <br>`opcional`  <br>`array` | [[Ver objeto]](../Entidad/Credito.md) | El arreglo puede contener solo 1 objeto. |
 | **PlacaVehiculo**  <br>`opcional`  <br>`string` | Número de placa del vehículo automotor. | Máximo 8 caracteres. |
 | **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo: 200 caracteres. |
 | **DetalleFactura**  <br>`obligatorio`  <br>`array` | [[Ver entidad]](../EntidadFactura/FacturaDetalle.md) | El arreglo puede contener hasta 99 objetos. |
@@ -40,9 +39,6 @@
 | **PorcentajeDetraccion**  <br>`opcional`  <br>`number` | Porcentaje de la detracción expresado en formato decimal (por ejemplo: 0.10). | decimal(8, 3) |
 | **ImporteRetencion**  <br>`opcional`  <br>`number` | Monto total de la retención. | decimal(14, 2) |
 | **PorcentajeRetencion**  <br>`opcional`  <br>`number` | Porcentaje de la retencion expresado en formato decimal (por ejemplo: 0.03). | decimal(8, 3) |
-| **RegimenPercepcion**  <br>`opcional`  <br>`number` | Identificador del régimen de percepción, del cual se obtiene el porcentaje de percepción.  <br>[[Ver listado]](../Listado/RegimenPercepcion.md) | Número entero. |
-| **ImportePercepcion**  <br>`opcional`  <br>`number` | Importe percibido. Es el importe obtenido de la 'Base Imponible de la Percepción' por el 'Porcentaje de percepción' (según el 'Regimen de Percepción' seleccionado), en moneda nacional. | decimal(14, 2) |
-| **BaseImponiblePercepcion**  <br>`opcional`  <br>`number` | Base imponible de la percepción. | decimal(14, 2)  <br>Este monto debe ser menor o igual que 'ImporteTotal' en moneda nacional. |
 
 ·
 
