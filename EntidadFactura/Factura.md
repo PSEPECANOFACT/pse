@@ -8,6 +8,8 @@
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la emisión del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
 | **FechaVencimiento**  <br>`obligatorio`  <br>`string` | Fecha y hora del vencimiento del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-ddTHH:mm:ss | Formato ISO 8601. |
 | **TipoOperacion**  <br>`obligatorio`  <br>`string` | [[Ver listado]](../Listado/TipoOperacion.md) |  |
+| **DireccionEntregaBien**  <br>`opcional`  <br>`object` | Dirección del lugar en el que se entrega el bien. Dato exclusivo para ventas itinerantes.  <br>[[Ver objeto]](../Entidad/DireccionEntregaBien.md) |  |
+| **CodigoPaisUsoServicio**  <br>`opcional`  <br>`string` | Código del pais del uso, explotación o aprovechamiento del servicio. | Debe contener 2 caracteres que representen al país.  <br>En caso el código del país sea consignado, si el tipo de operación es "0201" o "0208", el código no debe ser "PE"; de lo contrario, si el tipo de operación es diferente de "0201" y de "0208", el código del país solo debe ser "PE". |
 | **TipoMoneda**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoMoneda.md) |  |
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoCondicionVenta.md) |  |
 | **SubCondicion**  <br>`opcional`  <br>`string` |   <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
@@ -23,6 +25,7 @@
 | **TotalValorVentaOpeGravada**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Gravado, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
 | **TotalValorVentaOpeInafecta**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Inafecto, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
 | **TotalValorVentaOpeExonerada**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Exonerado, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
+| **TotalValorVentaOpeExportada**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Exportación, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
 | **TotalValorVentaOpeGratuita**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Gratuito. | decimal(14,2) |
 | **PorcentajeDescuentoGlobal**  <br>`opcional`  <br>`number` | Porcentaje global de descuento de la venta, expresdo en formato decimal: 15 % equivale a _0.15_ | decimal(14,2) |
 | **ImporteDescuentoGlobal**  <br>`opcional`  <br>`number` | Importe del descuento global de la venta sin incluir el impuesto correspondiente. | decimal(14,2) |
