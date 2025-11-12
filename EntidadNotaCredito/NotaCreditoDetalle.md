@@ -8,6 +8,7 @@
 | **Cantidad**  <br>`obligatorio`  <br>`number` | Cantidad del producto/servicio. | decimal(20,10). |
 | **CodigoProducto**  <br>`obligatorio`  <br>`string` | Código del producto/servicio. | Máximo 30 caracteres. |
 | **DescripcionProducto**  <br>`obligatorio`  <br>`string` | Descripción del producto/servicio.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 500 caracteres. |
+| **DetalleLoteProducto**  <br>`opcional`  <br>`array` | Lotes del producto por cada detalle del comprobante.  <br>[[Ver objeto]](../Entidad/LoteProducto.md) |  |
 | **ValorUnitario**  <br>`obligatorio`  <br>`number` | Precio del producto/servicio sin IGV. Consignar indicar la mayor cantidad en la parte de decimal para que ayuden a la validación de calculos. | decimal(20,10). |
 | **PrecioUnitario**  <br>`obligatorio`  <br>`number` | Precio de venta unitario por ítem (inc. IGV) | decimal(20,10). |
 | **Igv**  <br>`obligatorio`  <br>`number` | Valor del IGV del ítem. | decimal(20,2). |
