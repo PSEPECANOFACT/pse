@@ -19,6 +19,7 @@
 | **TotalValorVentaOpeGratuita**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gratuitas de la nota de crédito. | decimal(14,2) |
 | **TotalValorVentaOpeGravada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gravadas de la nota de crédito. | decimal(14,2) |
 | **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la nota de crédito. | decimal(14,2) |
+| **MontoNetoPendientePago**  <br>`opcional`  <br>`number` | Monto neto pendiente de pago. Es la sumatoria de todos los montos de las cuotas.  <br>Si el campo se deja en NULL, entonces el valor para el cálculo del monto se obtiene de: 'ImporteTotal'. | decimal(14, 2)  <br>Este monto debe ser menor o igual que: 'ImporteTotal'. |
 | **DetalleCredito**  <br>`condicional`  <br>`objeto` | Información adicional de la forma de pago al crédito.  <br>[[Ver entidad]](../Entidad/Credito.md) | Solo cuando el código de afectación al IGV es: 13. |
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | Identificador del tipo de condición de venta de la nota de crédito o del documento relacionado.  <br>[[Ver listado]](../Listado/TipoCondicionVenta.md) | Número entero. |
 | **FechaEmisionDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de la transacción del documento relacionado a la nota de crédito. | Formato: yyyy-MM-dd. |
