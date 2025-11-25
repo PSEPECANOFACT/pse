@@ -22,5 +22,5 @@
 | **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la nota de débito. | decimal(14,2) |
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | Identificador del tipo de condición de venta de la nota de débito o del documento relacionado.  <br>[[Ver listado]](../Listado/TipoCondicionVenta.md) | Número entero. |
 | **FechaEmisionDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de la transacción del documento relacionado a la nota de débito. | Formato: yyyy-MM-dd. |
-| **FechaVencimientoDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de vencimiento del documento relacionado a la nota de débito.  <br>Si la condición de venta es "Crédito", la fecha de vencimiento es el mismo que la fecha de emisión. | Formato: yyyy-MM-dd. |
+| **FechaVencimientoDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de vencimiento del documento relacionado a la nota de débito.  <br>Si la condición de venta es "Contado", la fecha de vencimiento es el mismo que la fecha de emisión. | Formato: yyyy-MM-dd. |
 | **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de llegada relacionado al comprobante de la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 200 caracteres. |
