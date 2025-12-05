@@ -2,7 +2,7 @@
 
 | Propiedad | Descripción | **Condición** |
 | --- | --- | --- |
-| **IdItem**  <br>`obligatorio`  <br>`number` | Número secuencial del ítem dentro del detalle del comprobante. | Valor mínimo: 1.  <br>Valor máximo: 99. |
+| **IdItem**  <br>`obligatorio`  <br>`number` | Número secuencial del ítem dentro del detalle del comprobante. | Valor mínimo: 1.  <br>Valor máximo: 999. |
 | **CodigoProducto**  <br>`obligatorio`  <br>`string` | Código del producto/servicio | Máximo 30 caracteres. |
 | **Descripcion**  <br>`obligatorio`  <br>`string` | Descripción del producto/servicio.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 500 caracteres. |
 | **UnidadMedida**  <br>`obligatorio`  <br>`string` | Unidad de medida del producto/servicio. | Entre 1 y 3 caracteres. |

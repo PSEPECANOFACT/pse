@@ -2,7 +2,7 @@
 
 | Propiedad | Descripción | **Condición** |
 | --- | --- | --- |
-| **IdItem**  <br>`obligatorio`  <br>`number` | Número secuencial del ítem dentro del detalle del comprobante. | Valor mínimo: 1.  <br>Valor máximo: 99. |
+| **IdItem**  <br>`obligatorio`  <br>`number` | Número secuencial del ítem dentro del detalle del comprobante. | Valor mínimo: 1.  <br>Valor máximo: 999. |
 | **CodigoProducto**  <br>`obligatorio`  <br>`string` | Código del producto/servicio | Máximo 30 caracteres. |
 | **Descripcion**  <br>`obligatorio`  <br>`string` | Descripción del producto/servicio.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 500 caracteres. |
 | **DetalleLoteProducto**  <br>`opcional`  <br>`array` | Lotes del producto por cada detalle del comprobante.  <br>[[Ver objeto]](../Entidad/LoteProducto.md) |  |
