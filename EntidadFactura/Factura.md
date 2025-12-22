@@ -47,6 +47,7 @@
 | **RegimenPercepcion**  <br>`opcional`  <br>`number` | Identificador del régimen de percepción, del cual se obtiene el porcentaje de percepción.  <br>[[Ver listado]](../Listado/RegimenPercepcion.md) | Número entero. |
 | **ImportePercepcion**  <br>`opcional`  <br>`number` | Importe percibido. Es el importe obtenido de la 'Base Imponible de la Percepción' por el 'Porcentaje de percepción' (según el 'Regimen de Percepción' seleccionado), en moneda nacional. | decimal(14, 2) |
 | **BaseImponiblePercepcion**  <br>`opcional`  <br>`number` | Base imponible de la percepción. | decimal(14, 2)  <br>Este monto debe ser menor o igual que 'ImporteTotal' en moneda nacional. |
+| **InformacionAdicional**  <br>`opcional`  <br>`array` | Información adicional del comprobante que puede ir en el PDF, en el XML, o en ambos.  <br>[[Ver objeto]](../Entidad/InformacionAdicional.md) |  |
 
 ·
 
