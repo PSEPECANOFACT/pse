@@ -1,0 +1,5 @@
+### ConfiguracionRepresentacionImpresa
+
+| **Propiedad**                            | **Descripción**                                                                                                                                                                                  | **Condición**                                                   |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| **Idioma**  <br>`opcional`  <br>`string` | Especifica el idioma del formato personalizado habilitado para el comercio. Este campo se utiliza únicamente para los comercios que han contratado un formato adicional personalizado en inglés. | Si envía valor, debe ser uno de los siguientes: **ES** o **EN** |
