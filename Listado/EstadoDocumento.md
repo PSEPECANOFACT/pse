@@ -6,3 +6,4 @@
 | 1         | Aceptado                       |
 | 2         | Anulado                        |
 | 3         | Rechazado                      |
+| 4         | Ilegible                      |
