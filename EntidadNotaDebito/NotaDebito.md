@@ -15,6 +15,7 @@
 | **DetalleNotaDebito**  <br>`obligatorio`  <br>`objeto` | Datos del detalle o ítem de la nota de débito.  <br>[[Ver entidad]](../EntidadNotaDebito/NotaDebitoDetalle.md) |  |
 | **Igv**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la nota de débito. | decimal(14,2) |
 | **IgvGratuito**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la nota de débito de operaciones gratuitas. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas gratuitas. | decimal(14,2) |
+| **TotalValorVentaOpeExportada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones exportadas de la nota de débito. | decimal(14,2) |
 | **TotalValorVentaOpeInafecta**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones inafectas de la nota de débito. | decimal(14,2) |
 | **TotalValorVentaOpeExonerada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones exoneradas de la nota de débito. | decimal(14,2) |
 | **TotalValorVentaOpeGratuita**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gratuitas de la nota de crédito. | decimal(14,2) |
