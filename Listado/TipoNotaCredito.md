@@ -12,6 +12,6 @@
 | 8         | Bonificación                                                     |
 | 9         | Disminución en el valor                                          |
 | 10        | Otros Conceptos                                                  |
-| 11        | Ajustes de operaciones                                           |
+| 11        | Ajustes de operaciones de exportación                            |
 | 12        | Ajustes afectos al IVAP                                          |
 | 13        | Corrección del monto neto, fechas de pago o montos de las cuotas |
