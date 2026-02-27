@@ -22,7 +22,9 @@
 | **DetalleCredito**  <br>`opcional`  <br>`array` | [[Ver objeto]](../Entidad/Credito.md) | Si la condición es al 'Contado', este campo debe ser null. |
 | **PlacaVehiculo**  <br>`opcional`  <br>`string` | Número de placa del vehículo automotor. | Máximo 8 caracteres. |
 | **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo: 200 caracteres. |
-| **DetalleFactura**  <br>`obligatorio`  <br>`array` | [[Ver entidad]](../EntidadFactura/FacturaDetalle.md) | El arreglo puede contener hasta 99 objetos. |
+| **GuiaRelacionadaFactura**  <br>`opcional`  <br>`array` | Guía de remisión relacionada con la operación.  <br>[[Ver objeto]](../Entidad/GuiaRelacionada.md) | El arreglo puede contener hasta 99 objetos. |
+| **OtroDocRelacionadoFactura**  <br>`opcional`  <br>`array` | Otro documento relacionado con la operación.  <br>[[Ver objeto]](../Entidad/OtroDocumentoRelacionado.md) | El arreglo puede contener hasta 99 objetos. |
+| **DetalleFactura**  <br>`obligatorio`  <br>`array` | [[Ver objeto]](../EntidadFactura/FacturaDetalle.md) | El arreglo puede contener hasta 99 objetos. |
 | **TotalValorVentaOpeGravada**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Gravado, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
 | **TotalValorVentaOpeInafecta**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Inafecto, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
 | **TotalValorVentaOpeExonerada**  <br>`opcional`  <br>`number` | Sumatoria del "valor venta del ítem" que tienen el tipo de afectación Exonerado, sin el "descuento global" (si es que tiene), y sin el "Subtotal de Anticipo" (si es que tiene). | decimal(14,2) |
