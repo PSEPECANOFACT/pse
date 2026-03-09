@@ -18,6 +18,7 @@
 | **ValorVenta**  <br>`obligatorio`  <br>`number` | Valor venta del item. Es la multiplicación de **Cantidad** por **ValorUnitario**, incluido el "descuento por ítem" (si es que tiene).  <br>_(*) Para mayor detalle revisar el ejemplo práctico de una venta con descuento por ítem en la parte inferior del documento._  | decimal(20,2) |
 | **Igv**  <br>`obligatorio`  <br>`number` | Valor del IGV del ítem, incluido el "descuento por ítem" (si es que tiene). <br>_(*) Para mayor detalle revisar el ejemplo práctico de una venta con descuento por ítem en la parte inferior del documento._ | decimal(20,2) |
 | **Total**  <br>`obligatorio`  <br>`number` | Total del item. | decimal(20,2) |
+| **DetalleDetraccionServicioTransporteCarga**  <br>`condicional`  <br>`object` | Información adicional - detracciones - servicio de transporte de carga.  <br>[[Ver entidad]](../Entidad/DetraccionServicioTransporteCarga.md) | Es obligatorio cuando el '[Tipo de operación](../Listado/TipoOperacion.md)' es "1004"; y no se debe consignar con otro 'Tipo de operación'. |
 
 **Ejemplo práctico de una venta con descuento por ítem:**
 
