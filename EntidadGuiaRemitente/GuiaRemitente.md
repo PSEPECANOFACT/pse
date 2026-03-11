@@ -37,4 +37,7 @@
 | **CodLocalSunatPuntoLlegada**  <br>`condicional`  <br>`string` | Código de establecimiento de punto de llegada. | Numérico de 4 dígitos.  <br>Obligatorio si el motivo de traslado es 'Traslado entre establecimientos de la misma empresa'. |
 | **DetalleGuia**  <br>`obligatorio`  <br>`array` | Detalles del comprobante.  <br>[[Ver entidad]](../EntidadGuiaRemitente/GuiaRemitenteDetalle.md) |  |
 | **VentaGuia**  <br>`condicional`  <br>`array` | Relación de ventas asociadas a la Guía de Remisión.  <br>[[Ver entidad]](../EntidadGuiaRemitente/GuiaRemitenteVenta.md) |  |
-| **InformacionAdicional**  <br>`opcional`  <br>`array` |  Información adicional del comprobante.  <br>[[Ver entidad]](../Entidad/InformacionAdicional.md) | De consignarse esta sección, debe tener como máximo 100 elementos. |
+| **InformacionAdicional**  <br>`opcional`  <br>`array` |  Información adicional del comprobante.  <br>[[Ver entidad]](../Entidad/InformacionAdicional.md) | De consignarse esta sección, debe tener como máximo 100 
+elementos. |
+| **Establecimientos** <br>`opcional` <br>`array` | Informacion de los establecimientos relacionados del comercio, pueden ir en el PDF. <br>[[Ver objeto]](../Entidad/Establecimientos.md) |  |
+| **CuentasCorrientes** <br>`opcional` <br>`array` | Informacion de las cuentas corrientes del comercio, pueden ir en el PDF <br>[[Ver objeto]](../Entidad/CuentaCorriente.md) |  | 
