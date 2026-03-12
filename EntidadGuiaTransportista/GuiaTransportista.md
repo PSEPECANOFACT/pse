@@ -30,3 +30,5 @@
 | **IndicadorRetornoVehiculoEnvaseVacio**  <br>`condicional`  <br>`number` | Indicador de retorno de vehículo con envases o embalajes vacíos. | Los valores son 1 (Sí) o 0 (No). |
 | **IndicadorRetornoVehiculoVacio**  <br>`condicional`  <br>`number` | Indicador de retorno de vehículo vacío. | Los valores son 1 (Sí) o 0 (No). |
 | **InformacionAdicional**  <br>`opcional`  <br>`array` |  Información adicional del comprobante.  <br>[[Ver entidad]](../Entidad/InformacionAdicional.md) | De consignarse esta sección, debe tener como máximo 100 elementos. |
+| **Establecimientos** <br>`opcional` <br>`array` | Informacion de los establecimientos relacionados del comercio, pueden ir en el PDF. <br>[[Ver objeto]](../Entidad/Establecimientos.md) |  |
+| **CuentasCorrientes** <br>`opcional` <br>`array` | Informacion de las cuentas corrientes del comercio, pueden ir en el PDF <br>[[Ver objeto]](../Entidad/CuentaCorriente.md) |  | 
