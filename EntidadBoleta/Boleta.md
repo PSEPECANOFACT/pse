@@ -27,6 +27,7 @@
 | **PorcentajeDescuentoGlobal**  <br>`opcional`  <br>`number` | Porcentaje global de descuento de la venta, expresdo en formato decimal: 15 % equivale a _0.15_ | decimal(14,2) |
 | **ImporteDescuentoGlobal**  <br>`opcional`  <br>`number` | Importe del descuento global de la venta sin incluir el impuesto correspondiente. | decimal(14,2) |
 | **ImporteDescuentoGlobalConIgv**  <br>`opcional`  <br>`number` | Importe del descuento global de la venta incluyendo el impuesto correspondiente (el impuesto solo es de las operaciones gravadas). |  |
+| **MontoCargoGlobalNoAfectaBI**  <br>`opcional`  <br>`number`  | Monto del cargo global que no afecta la base imponible del IGV | decimal(14,2) |
 | **Igv**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas onerosas, con el "Descuento Global sin IGV" (si es que tiene). | decimal(14,2) |
 | **IgvGratuito**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta de operaciones gratuitas. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas gratuitas. | decimal(14,2) |
 | **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la venta. Calculado en base a los "Totales de Valor Venta", menos el "Descuento Global" (si es que tiene), más el "IGV", menos el "Total de Anticipo" (si es que tiene) | decimal(14,2) |
