@@ -19,6 +19,7 @@
 | **NumeroBultos**  <br>`condicional`  <br>`number` | Número de bultos o pallets. | Numérico hasta 6 dígitos.  <br>Solo para motivo de traslado 'Exportación'. |
 | **ModalidadTransporte**  <br>`obligatorio`  <br>`number` | Modalidad de traslado o de transporte.  <br>[[Ver listado]](../Listado/ModalidadTransporte.md) | Catálogo 18. |
 | **FechaInicioTraslado**  <br>`obligatorio`  <br>`string` | Fecha de inicio de traslado.  <br>**Ejemplo:**  <br>yyyy-MM-dd. | Debe ser mayor o igual que la fecha de emisión. |
+| **IndicadorTransbordoProgramado**  <br>`condicional`  <br>`number` | Indicador de transbordo programado. | Los valores son 1 (Sí) o 0 (No). |
 | **IndicadorTrasladoVehiculoM1L**  <br>`condicional`  <br>`number` | Indicador de traslado en vehículos de categoría M1 o L.  <br>Interviene en las validaciónes de la 'Fecha de inicio de traslado', 'Vehículos' y 'Conductores'. | Los valores son 1 (Sí) o 0 (No). |
 | **IndicadorRetornoVehiculoEnvaseVacio**  <br>`condicional`  <br>`number` | Indicador de retorno de vehículo con envases o embalajes vacíos. | Los valores son 1 (Sí) o 0 (No). |
 | **IndicadorRetornoVehiculoVacio**  <br>`condicional`  <br>`number` | Indicador de retorno de vehículo vacío. | Los valores son 1 (Sí) o 0 (No). |
