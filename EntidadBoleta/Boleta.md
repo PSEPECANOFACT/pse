@@ -39,6 +39,7 @@
 | **BaseImponiblePercepcion**  <br>`opcional`  <br>`number` | Base imponible de la percepción. | decimal(14, 2)  <br>Este monto debe ser menor o igual que 'ImporteTotal' en moneda nacional. |
 | **Establecimientos** <br>`opcional` <br>`array` | Informacion de los establecimientos relacionados del comercio, pueden ir en el PDF. <br>[[Ver objeto]](../Entidad/Establecimientos.md) |  |
 | **CuentasCorrientes** <br>`opcional` <br>`array` | Informacion de las cuentas corrientes del comercio, pueden ir en el PDF <br>[[Ver objeto]](../Entidad/CuentaCorriente.md) |  | 
+| **ConfiguracionRepresentacionImpresa**  <br>`opcional`  <br>`object`  | Configuración para la representación impresa.  <br>[[Ver entidad]](../Entidad/ConfiguracionRepresentacionImpresa.md)  | Este campo se utiliza únicamente para los comercios que han contratado un formato adicional personalizado en inglés. |
 ·
 
 **CONDICIONES Y VALIDACIONES DE LOS TOTALES DE LA BOLETA**
