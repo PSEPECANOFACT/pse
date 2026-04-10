@@ -9,3 +9,4 @@
 | **DetalleResumenReversion**  <br>`obligatorio`  <br>`array` | Datos de los detalles o ítems del Resumen de Reversión.  <br>[[Ver entidad]](../EntidadResumenReversion/ResumenReversionDetalle.md) | Mínimo de ítems: 1.  <br>Máximo de ítems: 100. |
 | **Correo**  <br>`opcional`  <br>`string` | Correo electrónico al cual le llegará el CDR del CPE. | Se puede enviar una lista de correos utilizando el separador punto y coma (\;) |
 | **InformacionAdicional**  <br>`opcional`  <br>`array` | Información adicional.  <br>[[Ver entidad]](../Entidad/InformacionAdicional.md) | De consignarse esta sección, debe tener como máximo 100 elementos. |
+| **ConfiguracionRepresentacionImpresa**  <br>`opcional`  <br>`object`  | Configuración para la representación impresa.  <br>[[Ver entidad]](../Entidad/ConfiguracionRepresentacionImpresa.md)  | Este campo se utiliza únicamente para los comercios que han contratado un formato adicional personalizado en inglés. |

@@ -40,3 +40,4 @@
 | **InformacionAdicional**  <br>`opcional`  <br>`array` |  Información adicional del comprobante.  <br>[[Ver entidad]](../Entidad/InformacionAdicional.md) | De consignarse esta sección, debe tener como máximo 100 elementos. |
 | **Establecimientos** <br>`opcional` <br>`array` | Informacion de los establecimientos relacionados del comercio, pueden ir en el PDF. <br>[[Ver objeto]](../Entidad/Establecimientos.md) |  |
 | **CuentasCorrientes** <br>`opcional` <br>`array` | Informacion de las cuentas corrientes del comercio, pueden ir en el PDF <br>[[Ver objeto]](../Entidad/CuentaCorriente.md) |  | 
+| **ConfiguracionRepresentacionImpresa**  <br>`opcional`  <br>`object`  | Configuración para la representación impresa.  <br>[[Ver entidad]](../Entidad/ConfiguracionRepresentacionImpresa.md)  | Este campo se utiliza únicamente para los comercios que han contratado un formato adicional personalizado en inglés. |

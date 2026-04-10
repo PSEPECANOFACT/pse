@@ -53,6 +53,7 @@
 | **InformacionAdicional**  <br>`opcional`  <br>`array` | Información adicional del comprobante que puede ir en el PDF, en el XML, o en ambos.  <br>[[Ver objeto]](../Entidad/InformacionAdicional.md) |  |
 | **Establecimientos** <br>`opcional` <br>`array` | Informacion de los establecimientos relacionados del comercio, pueden ir en el PDF. <br>[[Ver objeto]](../Entidad/Establecimientos.md) |  |
 | **CuentasCorrientes** <br>`opcional` <br>`array` | Informacion de las cuentas corrientes del comercio, pueden ir en el PDF <br>[[Ver objeto]](../Entidad/CuentaCorriente.md) |  | 
+| **ConfiguracionRepresentacionImpresa**  <br>`opcional`  <br>`object`  | Configuración para la representación impresa.  <br>[[Ver entidad]](../Entidad/ConfiguracionRepresentacionImpresa.md)  | Este campo se utiliza únicamente para los comercios que han contratado un formato adicional personalizado en inglés. |
 ·
 
 **CONDICIONES Y VALIDACIONES DE LOS TOTALES DE LA FACTURA**

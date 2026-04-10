@@ -29,3 +29,4 @@
 | **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de llegada relacionado al comprobante de la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 200 caracteres. |
 | **Establecimientos** <br>`opcional` <br>`array` | Informacion de los establecimientos relacionados del comercio, pueden ir en el PDF. <br>[[Ver objeto]](../Entidad/Establecimientos.md) |  |
 | **CuentasCorrientes** <br>`opcional` <br>`array` | Informacion de las cuentas corrientes del comercio, pueden ir en el PDF <br>[[Ver objeto]](../Entidad/CuentaCorriente.md) |  | 
+| **ConfiguracionRepresentacionImpresa**  <br>`opcional`  <br>`object`  | Configuración para la representación impresa.  <br>[[Ver entidad]](../Entidad/ConfiguracionRepresentacionImpresa.md)  | Este campo se utiliza únicamente para los comercios que han contratado un formato adicional personalizado en inglés. |
