@@ -1,0 +1,14 @@
+### GENERAR CPE
+
+Para conocer los detalles de los campos del JSON, descripción y condiciones de cada tipo de comprobante, haga clic en sus respectivos enlaces:
+
+| Tipo de Comprobante | Enlace |
+| --- | --- |
+| Factura (01) | [EntidadFactura/Factura.md](../EntidadFactura/Factura.md) |
+| Boleta de Venta (03) | [EntidadBoleta/Boleta.md](../EntidadBoleta/Boleta.md) |
+| Nota de Crédito (07) | [EntidadNotaCredito/NotaCredito.md](../EntidadNotaCredito/NotaCredito.md) |
+| Nota de Débito (08) | [EntidadNotaDebito/NotaDebito.md](../EntidadNotaDebito/NotaDebito.md) |
+| Comprobante de Retención (20) | [EntidadRetencion/Retencion.md](../EntidadRetencion/Retencion.md) |
+| Comprobante de Percepción (40) | [EntidadPercepcion/Percepcion.md](../EntidadPercepcion/Percepcion.md) |
+| Guía de Remisión Remitente (09) | [EntidadGuiaRemitente/GuiaRemitente.md](../EntidadGuiaRemitente/GuiaRemitente.md) |
+| Guía de Remisión Transportista (31) | [EntidadGuiaTransportista/GuiaTransportista.md](../EntidadGuiaTransportista/GuiaTransportista.md) |
