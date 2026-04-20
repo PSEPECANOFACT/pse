@@ -9,4 +9,6 @@ Seleccione una opción para consultar comprobantes electrónicos:
 - [005. Obtener archivos por documento](./C005ObtenerArchivoXDocumento.md)
 - [006. Historial de envío del CPE](./C006HistorialEnvioCPE.md)
 - [007. Obtener enlace PDF por documento](./C007ObtenerEnlacePDFXDocumento.md)
-- [008. Registro de ventas](./C008RegistroVentas.md) _(Interno)_
+- [008. Registro de ventas](https://github.com/PSEPECANOFACT/pseinterno/blob/main/Contenido/C008RegistroVentas.md) _(Interno)_
+- [009. Buscar CPE pendiente CDR](https://github.com/PSEPECANOFACT/pseinterno/blob/main/Contenido/C009BuscarCPEPendienteCDR.md) _(Interno)_
+- [010. CPE rechazados](https://github.com/PSEPECANOFACT/pseinterno/blob/main/Contenido/C010CPERechazados.md) _(Interno)_

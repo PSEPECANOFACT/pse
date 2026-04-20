@@ -33,7 +33,7 @@ Si el código de la respuesta es **200**, significa que la solicitud enviada cum
 | --- | --- | --- |
 | **TipoDocumento**  <br>`number` | [[Ver listado]](../Listado/TipoComprobante.md) |  |
 | **FechaEmision**  <br>`string` | Fecha de emisión del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-dd |  |
-| **NumeroDocumento**  <br>`string` | Serie y correlativo del comprobante.  <br>Formato: [Serie]-[Correlativo] | 13 caracteres  <br>Serie: 4 caracteres  <br>Separador: Guión  <br>Correlativo: 8 dígitos |
+| **NumeroDocumento**  <br>`string` | Serie y correlativo del comprobante.  <br>Formato: [Serie]-[Correlativo] | 13 caracteres  <br>Serie: 4 caracteres  <br>Separador: Guion  <br>Correlativo: 8 dígitos |
 | **EstadoDocumento**  <br>`number` | [[Ver listado]](../Listado/EstadoDocumento.md) |  |
 | **DescripcionCdrDeclaracion**  <br>`string` | Mensaje informativo sobre la descripción del CDR |  |
 | **IdentificadorAnulacion**  <br>`string` | Identificador del resumen diario (RC) o comunicación de baja (RA) que anuló el comprobante. | Si **EstadoDocumento** es **Anulado,** esta propiedad debe tener valor; de lo contrario, será nulo. |

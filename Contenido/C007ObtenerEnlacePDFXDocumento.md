@@ -24,7 +24,7 @@ En el siguiente cuadro se detallan las propiedades que se deben enviar en el cue
 | --- | --- | --- |
 | **TipoDocumento**  <br>`obligatorio`  <br>`number` | [[Ver listado]](../Listado/TipoComprobante.md) |  |
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha de emisión del comprobante.  <br>**Ejemplo:**  <br>yyyy-MM-dd |  |
-| **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo del comprobante.  <br>Formato: \[Serie\]-\[Correlativo\] | 13 caracteres  <br>Serie: 4 caracteres  <br>Separador: Guión  <br>Correlativo: 8 dígitos |
+| **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo del comprobante.  <br>Formato: \[Serie\]-\[Correlativo\] | 13 caracteres  <br>Serie: 4 caracteres  <br>Separador: Guion  <br>Correlativo: 8 dígitos |
 
 #### Código de respuesta Http 200:
 
