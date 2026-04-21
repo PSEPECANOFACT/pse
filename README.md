@@ -6,5 +6,4 @@ Seleccione una opción para operar con los comprobantes electrónicos (CPE):
 - [002. Generar CPE](./Contenido/GenerarCpe.md)
 - [003. Anular CPE](./Contenido/AnularCpe.md)
 - [004. Consultar CPE](./Contenido/ConsultarCpe.md)
-- [005. Tankea](https://github.com/PSEPECANOFACT/pseinterno/blob/main/Contenido/Tankea.md) _(Interno)_
-- [006. Configurar logo del comercio](https://github.com/PSEPECANOFACT/pseinterno/blob/main/Contenido/ConfigurarLogoComercio.md) _(Interno)_
+- [999. PecanoFact](https://github.com/PSEPECANOFACT/pseinterno/blob/main/README.md) _(Interno)_
