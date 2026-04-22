@@ -4,7 +4,8 @@ Referencia: Catálogo número 51 de la SUNAT
 
 | Valor | Descripción                                                   | Tipo de comprobante asociado |
 | ----- | ------------------------------------------------------------- | ---------------------------- |
-| 0101  | Venta interna                                                 | Factura, Boletas             |
-| 1001  | Operación Sujeta a Detracción                                 | Factura, Boletas             |
-| 1004  | Operación Sujeta a Detracción - Servicios de Transporte Carga | Factura, Boletas             |
-| 2001  | Operación Sujeta a Percepción                                 | Factura, Boletas             |
+| 0101  | Venta Interna                                                 | Factura, Boleta              |
+| 0113  | Venta Interna - NRUS                                          | Boleta                       |
+| 1001  | Operación Sujeta a Detracción                                 | Factura, Boleta              |
+| 1004  | Operación Sujeta a Detracción - Servicios de Transporte Carga | Factura, Boleta              |
+| 2001  | Operación Sujeta a Percepción                                 | Factura, Boleta              |
