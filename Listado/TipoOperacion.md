@@ -8,8 +8,10 @@ Referencia: Catálogo número 51 de la SUNAT
 | 0113  | Venta Interna - NRUS                                                                                 | Boleta                       |
 | 0200	| Exportación de Bienes                                                                                | Factura, Boleta              |
 | 0201  | Exportación de Servicios - Prestación servicios realizados íntegramente en el país                   | Factura, Boleta              |
+| 0202  | Exportación de Servicios - Prestación de servicios de hospedaje No Domiciliado                       | Factura                      |
 | 0203  | Exportación de Servicios - Transporte de navieras                                                    | Factura, Boleta              |
 | 0204  | Exportación de Servicios - Servicios  a naves y aeronaves de bandera extranjera                      | Factura, Boleta              |
+| 0205  | Exportación de Servicios - Servicios que conformen un Paquete Turístico                              | Factura                      |
 | 0206  | Exportación de Servicios - Servicios complementarios al transporte de carga                          | Factura, Boleta              |
 | 0207  | Exportación de Servicios - Suministro de energía eléctrica a favor de sujetos domiciliados en ZED    | Factura, Boleta              |
 | 0208  | Exportación de Servicios - Prestación servicios realizados parcialmente en el extranjero             | Factura, Boleta              |
