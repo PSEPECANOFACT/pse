@@ -36,7 +36,7 @@
 | **MontoCargoGlobalNoAfectaBI**  <br>`opcional`  <br>`number`  | Monto del cargo global que no afecta la base imponible del IGV. | decimal(14,2) |
 | **Igv**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas onerosas, con el "Descuento Global sin IGV" (si es que tiene). | decimal(14,2) |
 | **IgvGratuito**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta de operaciones gratuitas. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas gratuitas. | decimal(14,2) |
-| **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la venta. Calculado en base a los "Totales de Valor Venta", menos el "Descuento Global" (si es que tiene), más el "IGV", menos el "Total de Anticipo" (si es que tiene) | decimal(14,2) |
+| **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la venta. Calculado en base a los "Totales de Valor Venta", menos el "Descuento Global" (si es que tiene), más el "IGV", menos el "Total de Anticipo" (si es que tiene). Tomar en cuenta solo a los totales de Valor Venta No Gratuitas. Si el comprobante tiene solo operaciones gratuitas, el campo 'ImporteTotal' debe ser cero. | decimal(14,2) |
 | **AnticipoFactura**  <br>`opcional`  <br>`array` | [[Ver objeto]](../EntidadFactura/FacturaAnticipo.md) |  |
 | **TotalAnticipos**  <br>`opcional`  <br>`number` | Sumatoria de los importes totales de anticipos (incluye los impuestos). | decimal(14, 2) |
 | **SubtotalAnticipos**  <br>`opcional`  <br>`number` | Sumatoria de los valores de venta de anticipos (no incluye los impuestos). | decimal(14, 2) |
