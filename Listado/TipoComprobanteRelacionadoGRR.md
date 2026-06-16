@@ -21,3 +21,5 @@
 | 78        | Registro Único de Usuarios y Transportista de Alcohol Etílico |
 | 80        | Constancia de Depósito - Detracción |
 | 81        | Código de autorización emitida por el SCOP |
+| 91        | Manifiesto de carga (MC) |
+| 92        | Cita/Orden Entrega Mercancías del Terminal Portuario |

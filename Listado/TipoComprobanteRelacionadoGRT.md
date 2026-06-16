@@ -18,3 +18,6 @@
 | 69        | Permiso / Autorización de operación de transporte de mercancías |
 | 80        | Constancia de Depósito - Detracción |
 | 82        | Declaración jurada de mudanza |
+| 93        | Documento ZOFRATACNA |
+| 94        | Solicitud traslado - ZED |
+| 95        | Solicitud de traslado - ZOFRATACNA |
