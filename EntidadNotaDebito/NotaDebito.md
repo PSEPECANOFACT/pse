@@ -12,6 +12,7 @@
 | **Cliente**  <br>`obligatorio`  <br>`objeto` | Datos del adquiriente o usuario.  <br>[[Ver entidad]](../Entidad/Adquiriente.md) |  |
 | **NumeroDocumentoReferencia**  <br>`obligatorio`  <br>`string` | Serie y correlativo del documento que modifica relacionado a la nota de débito. | Formato: \[Serie\]-\[Correlativo\]  <br>Serie: 4 caracteres.  <br>Correlativo: 8 caracteres.  <br>Máximo de caracteres: 13. |
 | **TipoComprobanteReferencia**  <br>`obligatorio`  <br>`number` | Identificador del tipo de comprobante del documento que modifica relacionado a la nota de débito.  <br>[[Ver listado]](../Listado/TipoComprobante.md) | Número entero. |
+| **TipoOperacionReferencia** <br>`opcional`  <br>`string` | Código del Tipo de Operación del documento que modifica relacionado a la nota de débito.  <br>[[Ver listado]](../Listado/TipoOperacion.md) | Dato opcional para identificar el tipo de operación de la factura o boleta asociada a la nota de débito. Por ejemplo, identificar el tipo de operación "0401" del documento de referencia. |
 | **DetalleNotaDebito**  <br>`obligatorio`  <br>`objeto` | Datos del detalle o ítem de la nota de débito.  <br>[[Ver entidad]](../EntidadNotaDebito/NotaDebitoDetalle.md) |  |
 | **Igv**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la nota de débito. | decimal(14,2) |
 | **IgvGratuito**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la nota de débito de operaciones gratuitas. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas gratuitas. | decimal(14,2) |
