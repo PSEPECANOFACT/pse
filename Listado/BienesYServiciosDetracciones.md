@@ -1,10 +1,13 @@
 ### BienesYServiciosDetracciones
 
+---
+Cambio de **prueba**
+
 | **Valor** | **Descripción**                                                                            |
 | --------- | ------------------------------------------------------------------------------------------ |
 | 1         | Azúcar y melaza de caña                                                                    |
 | 2         | Arroz                                                                                      |
-| 3         | Alcohol etílico                                                                            |
+| 3         | Alcohol etílico - Prueba                                                                           |
 | 4         | Recursos hidrobiológicos                                                                   |
 | 5         | Maíz amarillo duro                                                                         |
 | 7         | Caña de azúcar                                                                             |
@@ -40,4 +43,5 @@
 | 41        | Plomo                                                                                      |
 | 44        | Servicio de beneficio de minerales metálicos gravado con el IGV                            |
 | 45        | Minerales de oro y sus concentrados gravados con el IGV                                    |
+| 98        | Prueba chamo                                                                                  |
 | 99        | Ley 30737                                                                                  |
