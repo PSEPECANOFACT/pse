@@ -40,8 +40,9 @@
 | **AnticipoFactura**  <br>`opcional`  <br>`array` | [[Ver objeto]](../EntidadFactura/FacturaAnticipo.md) |  |
 | **TotalAnticipos**  <br>`opcional`  <br>`number` | Sumatoria de los importes totales de anticipos (incluye los impuestos). | decimal(14, 2) |
 | **SubtotalAnticipos**  <br>`opcional`  <br>`number` | Sumatoria de los valores de venta de anticipos (no incluye los impuestos). | decimal(14, 2) |
-| **BienServicioDetraccion**  <br>`opcional`  <br>`number` | [[Ver listado]](../Listado/BienesYServiciosDetracciones.md) | Listado de bienes y servicios sujetos a detracciones. |
+| **BienServicioDetraccion**  <br>`opcional`  <br>`number` | Listado de bienes y servicios sujetos a detracciones.  <br>[[Ver listado]](../Listado/BienesYServiciosDetracciones.md) |  |
 | **NumeroCuentaBNDetraccion**  <br>`opcional`  <br>`string` | Numero de cuenta en el Banco de la Nación para la detraccion. Puede incluir números, guiones y espacios en blanco. | Máximo: 100 caracteres. |
+| **CodigoMedioPagoDetraccion**   <br>`opcional`  <br>`number` | Código de medio de pago de la detracción.  <br>[[Ver listado]](../Listado/MedioPago.md) | Si no se consigna este campo, entonces tomará por defecto el valor 1 (Depósito en Cuenta). |
 | **ImporteDetraccion**  <br>`opcional`  <br>`number` | Monto total de la detracción en la moneda de la transacción (venta). | decimal(14, 2) |
 | **ImporteDetraccionEnMN**  <br>`opcional`  <br>`number` | Monto total de la detracción en moneda nacional (PEN). | decimal(14, 2) |
 | **PorcentajeDetraccion**  <br>`opcional`  <br>`number` | Porcentaje de la detracción expresado en formato decimal (por ejemplo: 0.10). | decimal(8, 3) |

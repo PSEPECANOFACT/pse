@@ -2,7 +2,7 @@
 
 | **Propiedad** | **Descripción** | **Condición** |
 | --- | --- | --- |
-| **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo de la nota de crédito. | Formato: \[Serie\]-\[Correlativo\]  <br>Serie: 4 caracteres.  <br>Correlativo: 8 caracteres.  <br>Máximo de caracteres: 13. |
+| **NumeroDocumento**  <br>`obligatorio`  <br>`string` | Serie y correlativo de la nota de débito. | Formato: \[Serie\]-\[Correlativo\]  <br>Serie: 4 caracteres.  <br>Correlativo: 8 caracteres.  <br>Máximo de caracteres: 13. |
 | **FechaEmision**  <br>`obligatorio`  <br>`string` | Fecha y hora de la transacción de la nota de débito. | Formato: yyyy-MM-ddTHH:mm:ss |
 | **Correo**  <br>`obligatorio`  <br>`string` | Correo electrónico al cual le llegará el CDR del CPE. | Se puede enviar una lista de correos utilizando el separador punto y coma (;) |
 | **TipoMoneda**  <br>`obligatorio`  <br>`number` | Tipo de moneda.  <br>[[Ver listado]](../Listado/TipoMoneda.md) | Número entero. |
@@ -12,13 +12,14 @@
 | **Cliente**  <br>`obligatorio`  <br>`objeto` | Datos del adquiriente o usuario.  <br>[[Ver entidad]](../Entidad/Adquiriente.md) |  |
 | **NumeroDocumentoReferencia**  <br>`obligatorio`  <br>`string` | Serie y correlativo del documento que modifica relacionado a la nota de débito. | Formato: \[Serie\]-\[Correlativo\]  <br>Serie: 4 caracteres.  <br>Correlativo: 8 caracteres.  <br>Máximo de caracteres: 13. |
 | **TipoComprobanteReferencia**  <br>`obligatorio`  <br>`number` | Identificador del tipo de comprobante del documento que modifica relacionado a la nota de débito.  <br>[[Ver listado]](../Listado/TipoComprobante.md) | Número entero. |
+| **TipoOperacionReferencia** <br>`opcional`  <br>`string` | Código del Tipo de Operación del documento que modifica relacionado a la nota de débito.  <br>[[Ver listado]](../Listado/TipoOperacion.md) | Dato opcional para identificar el tipo de operación de la factura o boleta asociada a la nota de débito. Por ejemplo, identificar el tipo de operación "0401" del documento de referencia. |
 | **DetalleNotaDebito**  <br>`obligatorio`  <br>`objeto` | Datos del detalle o ítem de la nota de débito.  <br>[[Ver entidad]](../EntidadNotaDebito/NotaDebitoDetalle.md) |  |
 | **Igv**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la nota de débito. | decimal(14,2) |
 | **IgvGratuito**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la nota de débito de operaciones gratuitas. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas gratuitas. | decimal(14,2) |
 | **TotalValorVentaOpeExportada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones exportadas de la nota de débito. | decimal(14,2) |
 | **TotalValorVentaOpeInafecta**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones inafectas de la nota de débito. | decimal(14,2) |
 | **TotalValorVentaOpeExonerada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones exoneradas de la nota de débito. | decimal(14,2) |
-| **TotalValorVentaOpeGratuita**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gratuitas de la nota de crédito. | decimal(14,2) |
+| **TotalValorVentaOpeGratuita**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gratuitas de la nota de débito. | decimal(14,2) |
 | **TotalValorVentaOpeGravada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gravadas de la nota de débito. | decimal(14,2) |
 | **FormaPago**  <br>`condicional`  <br>`string` | Forma de pago del comprobante cuando la condición de venta es 'Contado'.  <br>Por ejemplo: "Transferencia", "Tarjeta", "(Varias)", etc.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 100 caracteres. |
 | **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la nota de débito. | decimal(14,2) |

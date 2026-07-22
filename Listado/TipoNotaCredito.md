@@ -4,7 +4,7 @@
 | --------- | ---------------------------------------------------------------- |
 | 1         | Anulación de la operación                                        |
 | 2         | Anulación por error en el RUC                                    |
-| 3         | Corrección por error en la descripción                           |
+| 3         | Corrección por error en la descripción y/o código de producto SUNAT |
 | 4         | Descuento global                                                 |
 | 5         | Descuento por ítem                                               |
 | 6         | Devolución total                                                 |
@@ -14,4 +14,4 @@
 | 10        | Otros Conceptos                                                  |
 | 11        | Ajustes de operaciones de exportación                            |
 | 12        | Ajustes afectos al IVAP                                          |
-| 13        | Corrección del monto neto, fechas de pago o montos de las cuotas |
+| 13        | Corrección o modificación del monto neto pendiente de pago y/o la(s) fechas(s) de vencimiento del pago único o de las cuotas y/o los montos correspondientes a cada cuota, de ser el caso |
