@@ -4,7 +4,7 @@
 | --------- | ---------------------------------------------------------------- |
 | 1         | Anulación de la operación                                        |
 | 2         | Anulación por error en el RUC                                    |
-| 3         | Corrección por error en la descripción y/o código de producto SUNAT |
+| 3         | Corrección por error en la descripción o atención de reclamo respecto de bienes adquiridos o servicios prestados |
 | 4         | Descuento global                                                 |
 | 5         | Descuento por ítem                                               |
 | 6         | Devolución total                                                 |
