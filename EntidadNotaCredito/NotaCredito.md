@@ -27,7 +27,6 @@
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | Identificador del tipo de condición de venta de la nota de crédito o del documento relacionado.  <br>[[Ver listado]](../Listado/TipoCondicionVenta.md) | Número entero. |
 | **FechaEmisionDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de la transacción del documento relacionado a la nota de crédito. | Formato: yyyy-MM-dd. |
 | **FechaVencimientoDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de vencimiento del documento relacionado a la nota de crédito.  <br>Si la condición de venta es "Contado", la fecha de vencimiento es el mismo que la fecha de emisión. | Formato: yyyy-MM-dd. |
-| **DetalleDocumentoReferencia**  <br>`opcional`  <br>`object` | Información del tipo de moneda e importes del documento relacionado a la nota de crédito.  <br>[[Ver entidad]](../EntidadNotaCredito/NotaCreditoDetalleDocRef.md) | |
 | **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de llegada relacionado al comprobante de la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 200 caracteres. |
 | **Establecimientos** <br>`opcional` <br>`array` | Informacion de los establecimientos relacionados del comercio, pueden ir en el PDF. <br>[[Ver entidad]](../Entidad/Establecimientos.md) |  |
 | **CuentasCorrientes** <br>`opcional` <br>`array` | Informacion de las cuentas corrientes del comercio, pueden ir en el PDF <br>[[Ver entidad]](../Entidad/CuentaCorriente.md) |  | 
