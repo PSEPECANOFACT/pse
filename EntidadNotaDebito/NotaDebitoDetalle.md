@@ -7,6 +7,7 @@
 | **UnidadMedidaAlias**  <br>`opcional`  <br>`string` | Unidad de medida alternativa del producto/servicio. Si el usuario lo deja en blanco, obtiene el código de la unidad de medida establecida por la SUNAT.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 35 caracteres. |
 | **Cantidad**  <br>`obligatorio`  <br>`number` | Cantidad del producto/servicio. | decimal(20,10). |
 | **CodigoProducto**  <br>`obligatorio`  <br>`string` | Código del producto/servicio. | Máximo 30 caracteres. |
+| **CodigoProductoSunat**  <br>`opcional`  <br>`string` | Código del producto SUNAT que clasifica a los productos/servicios según el estándar internacional UNSPSC para categorizarlos de manera uniforme.  <br>Por ejemplo: 50202306  <br>  - 50: Segmento: Alimentos, bebidas y tabaco.  <br>  - 20: Familia: Bebidas.  <br>  - 23: Clase: Bebidas no alcohólicas.  <br>  - 06: Producto: Refrescos. | Conformado por 8 dígitos.  <br>Referencia: Catálogo 25. |
 | **DescripcionProducto**  <br>`obligatorio`  <br>`string` | Descripción del producto/servicio.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 500 caracteres. |
 | **DetalleLoteProducto**  <br>`opcional`  <br>`array` | Lotes del producto por cada detalle del comprobante.  <br>[[Ver objeto]](../Entidad/LoteProducto.md) |  |
 | **ValorUnitario**  <br>`obligatorio`  <br>`number` | Precio del producto/servicio sin IGV. Consignar indicar la mayor cantidad en la parte de decimal para que ayuden a la validación de calculos. | decimal(20,10). |

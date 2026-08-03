@@ -9,4 +9,4 @@
 | **Descripcion**  <br>`obligatorio`  <br>`string` | Descripción detallada del bien.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Alfanumérico de 3 a 500 caracteres. |
 | **DetalleLoteProducto**  <br>`opcional`  <br>`array` | Lotes del producto por cada detalle del comprobante.  <br>[[Ver objeto]](../Entidad/LoteProducto.md) |  |
 | **CodigoProducto**  <br>`obligatorio`  <br>`string` | Código del bien. | Alfanumérico de hasta 30 caracteres. |
-| **CodigoProductoSunat**  <br>`condicional`  <br>`string` | Código de Producto SUNAT. | Caracteres numéricos de hasta 8 dígitos. |
+| **CodigoProductoSunat**  <br>`condicional`  <br>`string` | Código del producto SUNAT que clasifica a los productos/servicios según el estándar internacional UNSPSC para categorizarlos de manera uniforme.  <br>Por ejemplo: 50202306  <br>  - 50: Segmento: Alimentos, bebidas y tabaco.  <br>  - 20: Familia: Bebidas.  <br>  - 23: Clase: Bebidas no alcohólicas.  <br>  - 06: Producto: Refrescos. | Conformado por 8 dígitos.  <br>Referencia: Catálogo 25. |
