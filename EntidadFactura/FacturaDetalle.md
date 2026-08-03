@@ -4,6 +4,7 @@
 | --- | --- | --- |
 | **IdItem**  <br>`obligatorio`  <br>`number` | Número secuencial del ítem dentro del detalle del comprobante. | Valor mínimo: 1.  <br>Valor máximo: 999. |
 | **CodigoProducto**  <br>`obligatorio`  <br>`string` | Código del producto/servicio | Máximo 30 caracteres. |
+| **CodigoProductoSunat**  <br>`opcional`  <br>`string` | Código del producto SUNAT que clasifica a los productos/servicios según el estándar internacional UNSPSC para categorizarlos de manera uniforme.  <br>Por ejemplo: 50202306  <br>  - 50: Segmento: Alimentos, bebidas y tabaco.  <br>  - 20: Familia: Bebidas.  <br>  - 23: Clase: Bebidas no alcohólicas.  <br>  - 06: Producto: Refrescos. | Conformado por 8 dígitos.  <br>Referencia: Catálogo 25. |
 | **Descripcion**  <br>`obligatorio`  <br>`string` | Descripción del producto/servicio.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 500 caracteres. |
 | **DetalleLoteProducto**  <br>`opcional`  <br>`array` | Lotes del producto por cada detalle del comprobante.  <br>[[Ver objeto]](../Entidad/LoteProducto.md) |  |
 | **UnidadMedida**  <br>`obligatorio`  <br>`string` | Unidad de medida del producto/servicio. | Entre 1 y 3 caracteres. |
