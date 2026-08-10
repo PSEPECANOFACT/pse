@@ -21,8 +21,9 @@
 | **TotalValorVentaOpeExonerada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones exoneradas de la nota de débito. | decimal(14,2) |
 | **TotalValorVentaOpeGratuita**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gratuitas de la nota de débito. | decimal(14,2) |
 | **TotalValorVentaOpeGravada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gravadas de la nota de débito. | decimal(14,2) |
-| **FormaPago**  <br>`condicional`  <br>`string` | Forma de pago del comprobante cuando la condición de venta es 'Contado'.  <br>Por ejemplo: "Transferencia", "Tarjeta", "(Varias)", etc.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 100 caracteres. |
+| **SumatoriaOtrosCargosNoAfectanBI**  <br>`opcional`  <br>`number` | Sumatoria otros cargos (que no afectan la base imponible).  <br>Este monto debe estar incluido en el 'Importe total' del comprobante. | decimal(14,2) |
 | **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la nota de débito. | decimal(14,2) |
+| **FormaPago**  <br>`condicional`  <br>`string` | Forma de pago del comprobante cuando la condición de venta es 'Contado'.  <br>Por ejemplo: "Transferencia", "Tarjeta", "(Varias)", etc.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo 100 caracteres. |
 | **TipoCondicionVenta**  <br>`obligatorio`  <br>`number` | Identificador del tipo de condición de venta de la nota de débito o del documento relacionado.  <br>[[Ver listado]](../Listado/TipoCondicionVenta.md) | Número entero. |
 | **FechaEmisionDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de la transacción del documento relacionado a la nota de débito. | Formato: yyyy-MM-dd. |
 | **FechaVencimientoDocReferencia**  <br>`obligatorio`  <br>`string` | Fecha de vencimiento del documento relacionado a la nota de débito.  <br>Si la condición de venta es "Contado", la fecha de vencimiento es el mismo que la fecha de emisión. | Formato: yyyy-MM-dd. |

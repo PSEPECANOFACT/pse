@@ -21,6 +21,7 @@
 | **TotalValorVentaOpeExonerada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones exoneradas de la nota de crédito. | decimal(14,2) |
 | **TotalValorVentaOpeGratuita**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gratuitas de la nota de crédito. | decimal(14,2) |
 | **TotalValorVentaOpeGravada**  <br>`condicional`  <br>`number` | Total valor de venta de operaciones gravadas de la nota de crédito. | decimal(14,2) |
+| **SumatoriaOtrosCargosNoAfectanBI**  <br>`opcional`  <br>`number` | Sumatoria otros cargos (que no afectan la base imponible).  <br>Este monto debe estar incluido en el 'Importe total' del comprobante. | decimal(14,2) |
 | **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la nota de crédito. | decimal(14,2) |
 | **MontoNetoPendientePago**  <br>`opcional`  <br>`number` | Monto neto pendiente de pago. Es la sumatoria de todos los montos de las cuotas.  <br>Si el campo se deja en NULL, entonces el valor para el cálculo del monto se obtiene de: 'ImporteTotal'. | decimal(14, 2)  <br>Este monto debe ser menor o igual que: 'ImporteTotal'. |
 | **DetalleCredito**  <br>`condicional`  <br>`object` | Información adicional de la forma de pago al crédito.  <br>[[Ver entidad]](../Entidad/Credito.md) | Solo cuando el código de afectación al IGV es: 13. |
