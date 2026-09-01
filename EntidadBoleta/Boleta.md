@@ -15,7 +15,7 @@
 | **SubCondicion**  <br>`opcional`  <br>`string` |   <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
 | **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
 | **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
-| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 100 caracteres. |
+| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 200 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
 | **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo: 200 caracteres. |
 | **DetalleBoleta**  <br>`obligatorio`  <br>`array` | [[Ver entidad]](../EntidadBoleta/BoletaDetalle.md) | El arreglo puede contener hasta 99 objetos. |
@@ -28,6 +28,7 @@
 | **ImporteDescuentoGlobal**  <br>`opcional`  <br>`number` | Importe del descuento global de la venta sin incluir el impuesto correspondiente. | decimal(14,2) |
 | **ImporteDescuentoGlobalConIgv**  <br>`opcional`  <br>`number` | Importe del descuento global de la venta incluyendo el impuesto correspondiente (el impuesto solo es de las operaciones gravadas). |  |
 | **MontoCargoGlobalNoAfectaBI**  <br>`opcional`  <br>`number`  | Monto del cargo global que no afecta la base imponible del IGV | decimal(14,2) |
+| **MontoRecargoConsumoPropinas**  <br>`opcional`  <br>`number`  | Monto del recargo al consumo y/o propinas.  <br>Este monto no afecta a la base imponible. | decimal(14,2) |
 | **Igv**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas onerosas, con el "Descuento Global sin IGV" (si es que tiene). | decimal(14,2) |
 | **IgvGratuito**  <br>`obligatorio`  <br>`number` | Monto total del IGV de la venta de operaciones gratuitas. Calculado en base a los "Totales de Valor Venta" de las operaciones gravadas gratuitas. | decimal(14,2) |
 | **ImporteTotal**  <br>`obligatorio`  <br>`number` | Importe total de la venta. Calculado en base a los "Totales de Valor Venta", menos el "Descuento Global" (si es que tiene), más el "IGV", menos el "Total de Anticipo" (si es que tiene). Tomar en cuenta solo a los totales de Valor Venta No Gratuitas. Si el comprobante tiene solo operaciones gratuitas, el campo 'ImporteTotal' debe ser cero. | decimal(14,2) |
