@@ -16,7 +16,7 @@
 | **SubCondicion**  <br>`opcional`  <br>`string` |   <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
 | **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
 | **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
-| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 100 caracteres. |
+| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 200 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
 | **MontoNetoPendientePago**  <br>`opcional`  <br>`number` | Monto neto pendiente de pago. Es la sumatoria de todos los montos de las cuotas.  <br>Si el campo se deja en NULL, entonces el valor para el cálculo del monto se obtiene de: 'ImporteTotal' - 'ImporteDetraccion' - 'ImporteRetencion'. | decimal(14, 2)  <br>Este monto debe ser menor o igual que: 'ImporteTotal' - 'ImporteDetraccion' - 'ImportePercepcion'. |
 | **DetalleCredito**  <br>`opcional`  <br>`array` | [[Ver objeto]](../Entidad/Credito.md) | Si la condición es al 'Contado', este campo debe ser null. |

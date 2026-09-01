@@ -15,7 +15,7 @@
 | **SubCondicion**  <br>`opcional`  <br>`string` |   <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
 | **FormaPago**  <br>`opcional`  <br>`string` | Aplica sólo a ventas con la condición.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 50 caracteres. |
 | **Correo**  <br>`obligatorio`  <br>`string` | Correos electrónicos de contacto, separados por punto y coma.  <br>**Ejemplo:**  <br>micorreo@midominio.com;tucorreo@tudominio.com | Máximo hasta 5 correos. |
-| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 100 caracteres. |
+| **ObservacionVenta**  <br>`opcional`  <br>`string` | Observación sobre la venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo hasta 200 caracteres. |
 | **TipoCambio**  <br>`opcional`  <br>`number` | Tipo de cambio de la operación | Si TipoMoneda es diferente de Soles, este campo se vuelve obligatorio. |
 | **DireccionEntrega**  <br>`opcional`  <br>`string` | Dirección de entrega del comprobante de venta.  <br>[_[Campo sanitizado]_](../Paginas/CampoSanitizado.md) | Máximo: 200 caracteres. |
 | **DetalleBoleta**  <br>`obligatorio`  <br>`array` | [[Ver entidad]](../EntidadBoleta/BoletaDetalle.md) | El arreglo puede contener hasta 99 objetos. |
