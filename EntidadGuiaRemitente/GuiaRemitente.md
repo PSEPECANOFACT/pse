@@ -16,7 +16,7 @@
 | **MotivoTraslado**  <br>`obligatorio`  <br>`number` | Motivo del traslado.  <br>[[Ver listado]](../Listado/MotivoTraslado.md) | Catálogo 20. |
 | **PesoBrutoTotalCarga**  <br>`obligatorio`  <br>`number` | Peso bruto total de la carga. | decimal(15,3) |
 | **UnidadMedidaPesoBruto**  <br>`obligatorio`  <br>`string` | Unidad de medida del peso bruto. | Solo puede ser "KGM" (Kilogramos) o "TNE" (Toneladas). |
-| **NumeroBultos**  <br>`condicional`  <br>`number` | Número de bultos o pallets. | Numérico hasta 6 dígitos.  <br>Solo para motivo de traslado 'Exportación'. |
+| **NumeroBultos**  <br>`condicional`  <br>`number` | Número de bultos o pallets. | Numérico hasta 9 dígitos.  <br>Obligatorio solo para los motivos de traslado 'Exportación' o 'Importación'. |
 | **ModalidadTransporte**  <br>`obligatorio`  <br>`number` | Modalidad de traslado o de transporte.  <br>[[Ver listado]](../Listado/ModalidadTransporte.md) | Catálogo 18. |
 | **FechaInicioTraslado**  <br>`obligatorio`  <br>`string` | Fecha de inicio de traslado.  <br>**Ejemplo:**  <br>yyyy-MM-dd. | Debe ser mayor o igual que la fecha de emisión. |
 | **IndicadorTransbordoProgramado**  <br>`condicional`  <br>`number` | Indicador de transbordo programado. | Los valores son 1 (Sí) o 0 (No). |
