@@ -13,5 +13,4 @@
 | 9         | Disminución en el valor                                          |
 | 10        | Otros Conceptos                                                  |
 | 11        | Ajustes de operaciones de exportación                            |
-| 12        | Ajustes afectos al IVAP                                          |
 | 13        | Corrección o modificación del monto neto pendiente de pago y/o la(s) fechas(s) de vencimiento del pago único o de las cuotas y/o los montos correspondientes a cada cuota, de ser el caso |
